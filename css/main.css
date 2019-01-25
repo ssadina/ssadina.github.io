@@ -1,0 +1,90 @@
+@font-face {
+  font-family: Gagalin-Regular;
+  src: url(../fonts/Gagalin-Regular.otf);
+  /*url(../fonts/Lifehack-Medium.otf);*/
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Lifehack';
+  src: url(../fonts/Lifehack-Medium.otf);
+  font-weight: 500;
+  font-style: normal; }
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px; }
+
+.wrap {
+  width: 940px;
+  margin: 0 auto; }
+
+.page {
+  height: 649px; }
+
+.page1 {
+  background: url(../img/texture.png) no-repeat, url(../img/bg.png) no-repeat;
+  background-size: cover; }
+
+header {
+  padding-top: 12px; }
+
+header, ul.menu {
+  display: flex; }
+
+ul.menu {
+  margin-top: 29px; }
+
+.menu .item {
+  color: #ffffff;
+  margin-left: 37px;
+  text-transform: uppercase;
+  font-size: 13px; }
+
+.menu .item:first-child {
+  list-style-type: none;
+  margin-left: 0px; }
+
+.button {
+  width: 97px;
+  height: 35px;
+  margin: 18px 0px 0 15px;
+  border-radius: 4px;
+  text-align: center;
+  color: #ffffff;
+  align-items: flex-end; }
+  .button span {
+    display: inline-block;
+    padding: 13px;
+    line-height: 9px;
+    font-size: 13px;
+    text-transform: uppercase; }
+
+.button.buy {
+  background: #e45028;
+  color: #ffffff; }
+
+.banner {
+  display: flex;
+  align-items: center; }
+  .banner .header {
+    font-family: Gagalin-Regular;
+    color: #f8b43a;
+    font-size: 72px;
+    margin: 0; }
+  .banner .text {
+    color: #ffffff;
+    font-family: Lifehack;
+    font-size: 65px;
+    line-height: 60px;
+    margin: 0; }
+  .banner .description {
+    padding-left: 12px; }
+  .banner .nav {
+    color: #ffffff;
+    align-self: flex-start; }
+
+.nav_page {
+  background: url(../img/arrow-scroll.png) no-repeat 50%;
+  height: 14px;
+  margin-top: 95px; }
+
+/*# sourceMappingURL=main.css.map */
