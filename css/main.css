@@ -1,3 +1,41 @@
+/*colors*/
+/*normalize*/
+@import "mics/normalize.css" screen;
+/*setup*/
+@import url(mics/fonts.css);
+@import url(mics/mixins.css);
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px; }
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  width: 100%;
+  min-width: 940px; }
+
+.container {
+  width: 940px;
+  margin: 0 auto; }
+
+.section {
+  height: 100vh;
+  min-height: 650px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    list-style: none; }
+
 @font-face {
   font-family: Gagalin-Regular;
   src: url(../fonts/Gagalin-Regular.otf);
@@ -9,82 +47,118 @@
   src: url(../fonts/Lifehack-Medium.otf);
   font-weight: 500;
   font-style: normal; }
-body {
-  font-family: 'Ubuntu', sans-serif;
+/*block*/
+.header {
+  padding-top: 12px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.header, .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
   font-size: 13px; }
+  .menu__item:after {
+    content: "";
+    margin: 0 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #ffffff; }
+  .menu__item:last-child:after {
+    display: none; }
 
-.wrap {
-  width: 940px;
-  margin: 0 auto; }
+.menu__item a {
+  color: #ffffff;
+  text-decoration: none; }
 
-.page {
-  height: 649px; }
+.header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
-.page1 {
+.nav {
+  color: #ffffff;
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
+
+.section.hero {
   background: url(../img/texture.png) no-repeat, url(../img/bg.png) no-repeat;
   background-size: cover; }
 
-header {
-  padding-top: 12px; }
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0.9;
+      -ms-flex: 0.9;
+          flex: 0.9; }
 
-header, ul.menu {
-  display: flex; }
-
-ul.menu {
-  margin-top: 29px; }
-
-.menu .item {
+.hero__content-description {
   color: #ffffff;
-  margin-left: 37px;
-  text-transform: uppercase;
-  font-size: 13px; }
+  font-family: Lifehack;
+  font-size: 65px;
+  line-height: 60px;
+  margin: 0; }
 
-.menu .item:first-child {
-  list-style-type: none;
-  margin-left: 0px; }
+.hero__content-text {
+  padding-left: 12px; }
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%; }
+
+.nav_page {
+  background: url(../img/icons/arrow-scroll.svg) no-repeat 50%;
+  height: 14px; }
 
 .button {
-  width: 97px;
-  height: 35px;
-  margin: 18px 0px 0 15px;
+  background: #e45028;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
   border-radius: 4px;
   text-align: center;
   color: #ffffff;
-  align-items: flex-end; }
-  .button span {
-    display: inline-block;
-    padding: 13px;
-    line-height: 9px;
-    font-size: 13px;
-    text-transform: uppercase; }
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-transform: uppercase;
+  padding: 8px 15px;
+  font-size: 13px;
+  text-decoration: none; }
 
-.button.buy {
-  background: #e45028;
-  color: #ffffff; }
+.hero__order_btn {
+  margin-left: 15px; }
 
-.banner {
-  display: flex;
-  align-items: center; }
-  .banner .header {
-    font-family: Gagalin-Regular;
-    color: #f8b43a;
-    font-size: 72px;
-    margin: 0; }
-  .banner .text {
-    color: #ffffff;
-    font-family: Lifehack;
-    font-size: 65px;
-    line-height: 60px;
-    margin: 0; }
-  .banner .description {
-    padding-left: 12px; }
-  .banner .nav {
-    color: #ffffff;
-    align-self: flex-start; }
-
-.nav_page {
-  background: url(../img/arrow-scroll.png) no-repeat 50%;
-  height: 14px;
-  margin-top: 95px; }
+.title {
+  font-family: Gagalin-Regular;
+  color: #f8b43a;
+  font-size: 72px;
+  margin: 0;
+  line-height: 1.1em; }
 
 /*# sourceMappingURL=main.css.map */

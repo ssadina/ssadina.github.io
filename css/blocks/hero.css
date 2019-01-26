@@ -1,0 +1,40 @@
+.section.hero {
+  background: url(../img/texture.png) no-repeat, url(../img/bg.png) no-repeat;
+  background-size: cover; }
+
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0.9;
+      -ms-flex: 0.9;
+          flex: 0.9; }
+
+.hero__content-description {
+  color: #ffffff;
+  font-family: Lifehack;
+  font-size: 65px;
+  line-height: 60px;
+  margin: 0; }
+
+.hero__content-text {
+  padding-left: 12px; }
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%; }
+
+.nav_page {
+  background: url(../img/icons/arrow-scroll.svg) no-repeat 50%;
+  height: 14px; }
+
+/*# sourceMappingURL=hero.css.map */

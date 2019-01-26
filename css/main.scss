@@ -1,6 +1,15 @@
-﻿$yellow: #f8b43a;
+﻿/*colors*/
+$yellow: #f8b43a;
 $red: #e45028;
 
+/*normalize*/
+@import "mics/normalize.css" screen;
+
+
+/*setup*/
+@import "mics/fonts.css" ;
+@import "mics/mixins.css" ;
+@import "./mics/layout.scss" ;
 
 @font-face{
 	font-family: Gagalin-Regular, /*Lifehack, Ubuntu*/;
@@ -16,95 +25,15 @@ $red: #e45028;
     font-weight: 500;
     font-style: normal;
 }
-body{
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 13px;
-}
-.wrap{
-	width: 940px;
-	margin: 0 auto;
-}
-.page {
-    height: 649px;
-}
-.page1 {
-	background: url(../img/texture.png) no-repeat,
-				url(../img/bg.png) no-repeat;
-	background-size: cover;
-}
 
-header{
-	padding-top: 12px;
-}
-header, ul.menu {
-	display: flex;
-}
-ul.menu {
-    margin-top: 29px;
-}
-.menu .item{
-	color: #ffffff;
-	margin-left: 37px;
-	text-transform: uppercase;
-    font-size: 13px;
 
-}
-.menu .item:first-child {
-	list-style-type: none;
-	margin-left: 0px;
-}
-.button {
-    width: 97px;
-    height: 35px;
-    margin: 18px 0px 0 15px;
-    border-radius: 4px;
-    text-align: center;
-    color: #ffffff;
-    align-items: flex-end;
 
-	
-	span{
-		display: inline-block;
-	    padding: 13px;
-	    line-height: 9px;
-	    font-size: 13px;
-	    text-transform: uppercase;
-	}
+/*block*/
+@import "./blocks/header.scss";
+@import "./blocks/hero.scss" ;
+@import "./blocks/button.scss" ;
+@import "./blocks/title.scss" ;
 
-}
 
-.button.buy {
-    background: $red;
-    color: #ffffff;
-}
-.banner {
-    display: flex;
-    align-items: center;
 
-	.header{
-			font-family: Gagalin-Regular;
-			color: $yellow;
-			font-size: 72px;
-			margin: 0;
-	}
 
-	.text {
-	    color: #ffffff;
-	    font-family: Lifehack;
-	    font-size: 65px;
-	    line-height: 60px;
-	    margin: 0;
-	}
-	.description {
-	    padding-left: 12px;
-	}
-	.nav{
-		color: #ffffff;
-		align-self: flex-start;
-	}
-}
-.nav_page{
-    background: url(../img/arrow-scroll.png) no-repeat 50%;
-    height: 14px;
-    margin-top: 95px;
-}
