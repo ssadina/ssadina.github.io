@@ -17,6 +17,18 @@ body{
     height: 100vh;
     min-height: 650px;
 }
+.section_centered{
+	.container{
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.title{
+		width: 100%;
+		text-align: center;
+	}
+}
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
 	font-weight: normal;
@@ -32,4 +44,7 @@ ul{
 	li{
 		list-style: none;
 	}
+}
+*{
+	box-sizing: border-box;
 }

@@ -1,0 +1,38 @@
+.order{
+	background: url(../img/bg_order.jpg) center center /cover no-repeat;
+}
+.form__row{
+	display: flex;
+}
+.form__block{
+	margin-right: 20px;
+	flex: 1;
+
+	&:last-child{
+		margin-right: 0;
+	}; 
+}
+.form__block-input{
+	border-radius: 5px;
+	background: #fff;
+	border: none;
+	width: 100%;
+	padding: 5px 10px;
+}
+.form__block-title {
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+}
+.left_block, .right_block {
+    width: 50%;
+}
+.form {
+    display: flex;
+}
+.left_block{
+	padding-right: 10px;
+}
+.right_block {
+	padding-left: 10px;
+}

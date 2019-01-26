@@ -13,23 +13,22 @@
 }
 
 
-	.hero__content-description {
-	    color: #ffffff;
-	    font-family: Lifehack;
-	    font-size: 65px;
-	    line-height: 60px;
-	    margin: 0;
-	}
-	.hero__content-text {
-	    padding-left: 12px;
-	}
-	.hero__container{
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-	}
-
-	.nav_page{
-    background: url(../img/icons/arrow-scroll.svg) no-repeat 50%;
-    height: 14px;
+.hero__content-description {
+    color: #ffffff;
+    font-family: Lifehack;
+    font-size: 65px;
+    line-height: 60px;
+    margin: 0;
+}
+.hero__content-text {
+    padding-left: 12px;
+}
+.hero__container{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.nav_page{
+	background: url(../img/icons/arrow-scroll.svg) no-repeat 50%;
+	height: 14px;
 }

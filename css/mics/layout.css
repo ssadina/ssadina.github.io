@@ -16,6 +16,22 @@ body {
   height: 100vh;
   min-height: 650px; }
 
+.section_centered .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+.section_centered .title {
+  width: 100%;
+  text-align: center; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal; }
@@ -29,5 +45,9 @@ ul {
   margin: 0; }
   ul li {
     list-style: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 /*# sourceMappingURL=layout.css.map */
