@@ -177,6 +177,10 @@ ul {
 .btn_bg_black {
   background: #000; }
 
+.btn_bg_order {
+  background: transparent;
+  margin-left: 5px; }
+
 .title {
   font-family: Gagalin-Regular;
   color: #f8b43a;
@@ -283,7 +287,13 @@ ul {
 .form__row {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding-top: 15px; }
+  .form__row:first-child {
+    padding-top: 0; }
+
+.form__row_right {
+  padding-top: 20px; }
 
 .form__block {
   margin-right: 20px;
@@ -298,12 +308,17 @@ ul {
   background: #fff;
   border: none;
   width: 100%;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  outline: none;
+  border: 2px solid transparent; }
+  .form__block-input:focus {
+    border: 2px solid #f8b43a; }
 
 .form__block-title {
   color: #fff;
   font-size: 14px;
-  line-height: 24px; }
+  line-height: 24px;
+  padding-bottom: 3px; }
 
 .left_block, .right_block {
   width: 50%; }
@@ -311,13 +326,69 @@ ul {
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin: 0px 50px; }
 
 .left_block {
   padding-right: 10px; }
 
 .right_block {
   padding-left: 10px; }
+
+.form__block-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff; }
+
+.form__block-radio {
+  width: 13px;
+  margin-right: 10px; }
+
+input[type='radio']:before {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 50%;
+  margin: 22% 22%;
+  border-radius: 50%; }
+
+input[type='radio']:checked:before {
+  background: #e45028; }
+
+.checkbox {
+  position: relative;
+  padding-left: 25px; }
+
+.checkbox input[type=checkbox] {
+  display: none; }
+
+.checkbox label:after {
+  content: '';
+  display: block;
+  height: 14px;
+  width: 14px;
+  outline: 1px solid #939598;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: #fff; }
+
+input[type=checkbox] + label {
+  cursor: pointer;
+  z-index: 100;
+  color: #fff; }
+
+input[type=checkbox] + label:after {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  width: 15px;
+  height: 15px;
+  background: url(../img/icons/input_icons.svg) center center no-repeat/cover #fff; }
+
+.form__block-submit:focus {
+  outline: none; }
 
 .fixed-menu {
   position: fixed;
