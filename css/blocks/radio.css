@@ -1,26 +1,22 @@
 /*
-Error: Undefined variable: "$yellow".
-        on line 31 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss
+Error: Undefined variable: "$red".
+        on line 30 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\radio.scss
 
-26: 	padding: 7px 10px;
-27: 	outline: none;
-28: 	border: 2px solid transparent;
-29: 
-30: 	&:focus{
-31: 			border: 2px solid $yellow;
-32: 	}
-33: }
-34: .form__block-textarea{
-35: 	border-radius: 5px;
-36: 	background: #fff;
+25: 		position: absolute;
+26: 		content: "";
+27: 		top: 50%;
+28: 		left: 50%;
+29: 		transform: translate(-50%, -50%);
+30: 		background-color: $red;
+31: 		width: 7.5px;
+32: 		height: 7.5px;
+33: 		opacity: 0;
+34: 		transition:0.3;
+35: 	}
 
 Backtrace:
-C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss:31
+C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\radio.scss:30
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
@@ -77,4 +73,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 31 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss\A \A 26: 	padding: 7px 10px;\A 27: 	outline: none;\A 28: 	border: 2px solid transparent;\A 29: \A 30: 	&:focus{\A 31: 			border: 2px solid $yellow;\A 32: 	}\A 33: }\A 34: .form__block-textarea{\A 35: 	border-radius: 5px;\A 36: 	background: #fff;"; }
+  content: "Error: Undefined variable: \"$red\".\A         on line 30 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\radio.scss\A \A 25: 		position: absolute;\A 26: 		content: \"\";\A 27: 		top: 50%;\A 28: 		left: 50%;\A 29: 		transform: translate(-50%, -50%);\A 30: 		background-color: $red;\A 31: 		width: 7.5px;\A 32: 		height: 7.5px;\A 33: 		opacity: 0;\A 34: 		transition:0.3;\A 35: 	}"; }

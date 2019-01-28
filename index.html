@@ -86,6 +86,10 @@
 				</ul>
 			</div>
 		</section>
+		<section class="section section_menu">
+			<div class=""></div>			
+		</section>
+
 		<section class="section reviews">
 			<div class="container">
 				<ul class="reviews__list">
@@ -242,23 +246,39 @@
 						<div class="form__row">
 							<label for="" class="form__block">
 								<div class="form__block-title">Комментарий</div>
-								<textarea rows="6" class="form__block-input"></textarea>
+								<textarea class="form__block-textarea"></textarea>
 							</label>
 						</div>
-						<div class="form__row form__row_right">
-							<label for="" class="form__block form__block-radio">
-								<input type="radio" name="payment" value="cash" class="form__block-input form__block-radio">Потребуется сдача
-							</label>
-							<label for="" class="form__block form__block-radio">
-								<input type="radio" name="payment" value="card" class="form__block-input form__block-radio">Оплата по карте
+						<div class="form__row">
+							<div class="radio__group">
+								<label class="radio">
+									<input type="radio" name="radio" value="cash" class="radio__input">
+									<div class="radio__content">
+										<div class="radio__btn"></div>
+										<div class="radio__text">Потребуется сдача</div>
+									</div>
+								</label>
+								<label class="radio">
+									<input type="radio" name="radio" value="cash" class="radio__input">
+									<div class="radio__content">
+										<div class="radio__btn"></div>
+										<div class="radio__text">Оплата по карте</div>
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="checkbox">
+								<input type="checkbox" value="cash" class="checkbox__input">
+								<div class="checkbox__content">
+									<div class="checkbox__btn">
+										<img src="./img/icons/check.png">
+									</div>
+									<div class="checkbox__text">Не перезванивать</div>
+								</div>
 							</label>
 						</div>
-						<div class="form__row form__row_right checkbox">
-							<input type="checkbox" value="change" class="form__block-input form__block-checkbox">
-							<label for="form__block-checkbox" class="form__block form__block-checkbox">Не перезванивать
-							</label>
-						</div>
-						<div class="form__row form__row_right">
+						<div class="form__row">
 							<label for="" class=" form__block-submit">
 								<input type="submit" value="Заказать" class="button form__block-submit">
 							</label>
@@ -274,14 +294,14 @@
 
 		<nav class="fixed-menu">
 			<ul class="fixed-menu__list">
-				<li class="fixed-menu__item"></li>
-				<li class="fixed-menu__item"></li>
-				<li class="fixed-menu__item"></li>
-				<li class="fixed-menu__item"></li>
-				<li class="fixed-menu__item"></li>
-				<li class="fixed-menu__item"></li>
-				<li class="fixed-menu__item"></li>
-				<li class="fixed-menu__item"></li>
+				<li class="fixed-menu__item"><a href="#"></a></li>
+				<li class="fixed-menu__item"><a href="#"></a></li>
+				<li class="fixed-menu__item"><a href="#"></a></li>
+				<li class="fixed-menu__item"><a href="#"></a></li>
+				<li class="fixed-menu__item"><a href="#"></a></li>
+				<li class="fixed-menu__item"><a href="#"></a></li>
+				<li class="fixed-menu__item"><a href="#"></a></li>
+				<li class="fixed-menu__item"><a href="#"></a></li>
 			</ul>
 		</nav>	
 	</div>
