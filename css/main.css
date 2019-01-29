@@ -189,6 +189,9 @@ ul {
   line-height: 1.1em;
   margin-bottom: 45px; }
 
+.title__white {
+  color: #fff; }
+
 .best {
   background: url(../img/bg_best.png) center center/cover no-repeat; }
 
@@ -439,6 +442,72 @@ ul {
 .checkbox__text {
   color: #fff;
   font-size: 14px; }
+
+.section_menu {
+  position: relative;
+  padding: 5.9375rem;
+  background: url("../img/bg_menu.png") 50% 50%/cover no-repeat; }
+
+.accordion-menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%; }
+
+.accordion-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  height: 100%; }
+
+.accordion-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .accordion-menu__item:hover .accordion-menu__text {
+    max-width: 500px; }
+
+/* .accordion-menu__item {
+ 	display: flex;
+}
+.accordion-menu__item:hover .accordion-menu__text {
+			max-width: 500px;
+ } */
+.accordion-menu__link {
+  position: relative;
+  display: block;
+  width: 80px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  background: url("../img/accordeon1.jpg") center/cover no-repeat; }
+  .accordion-menu__link span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0) rotate(-90deg);
+            transform: translate(-50%, 0) rotate(-90deg);
+    color: #fff;
+    font-family: Gagalin-Regular;
+    font-size: 40px;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0; }
+
+.accordion-menu__text {
+  background-color: rgba(47, 50, 52, 0.9);
+  color: #fff;
+  overflow: hidden;
+  max-width: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .accordion-menu__text span {
+    padding: 35px;
+    display: inline-block;
+    width: 500px; }
 
 .fixed-menu {
   position: fixed;
