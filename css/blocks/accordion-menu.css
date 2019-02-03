@@ -1,62 +1,69 @@
-.accordion-menu {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%; }
+/*
+Error: Undefined mixin 'tablets'.
+        on line 6 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\accordion-menu.scss, in `tablets'
+        from line 6 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\accordion-menu.scss
 
-.accordion-menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  height: 100%; }
+1: .section_menu{
+2: 	position: relative;
+3: 	padding: 5.9375rem;
+4: 	background: url("../img/bg_menu.png") 50% 50% /cover no-repeat;
+5: 
+6: 	@include tablets {
+7: 		padding: rem(30px) rem(20px);
+8: 	}
+9: }
+10: .accordion-menu{
+11: 	position: absolute;
 
-.accordion-menu__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .accordion-menu__item:hover .accordion-menu__text {
-    max-width: 500px; }
-
-/* .accordion-menu__item {
- 	display: flex;
-}
-.accordion-menu__item:hover .accordion-menu__text {
-			max-width: 500px;
- } */
-.accordion-menu__link {
-  position: relative;
-  display: block;
-  width: 80px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  background: url("../img/accordeon1.jpg") center/cover no-repeat; }
-  .accordion-menu__link span {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0) rotate(-90deg);
-            transform: translate(-50%, 0) rotate(-90deg);
-    color: #fff;
-    font-family: Gagalin-Regular;
-    font-size: 40px;
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0; }
-
-.accordion-menu__text {
-  background-color: rgba(47, 50, 52, 0.9);
-  color: #fff;
-  overflow: hidden;
-  max-width: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-  .accordion-menu__text span {
-    padding: 35px;
-    display: inline-block;
-    width: 500px; }
-
-/*# sourceMappingURL=accordion-menu.css.map */
+Backtrace:
+C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\accordion-menu.scss:6:in `tablets'
+C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\accordion-menu.scss:6
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'tablets'.\A         on line 6 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\accordion-menu.scss, in `tablets'\A         from line 6 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\accordion-menu.scss\A \A 1: .section_menu{\A 2: 	position: relative;\A 3: 	padding: 5.9375rem;\A 4: 	background: url(\"../img/bg_menu.png\") 50% 50% /cover no-repeat;\A 5: \A 6: 	@include tablets {\A 7: 		padding: rem(30px) rem(20px);\A 8: 	}\A 9: }\A 10: .accordion-menu{\A 11: 	position: absolute;"; }

@@ -1,0 +1,15 @@
+.social-block__list{
+	display: flex;
+	padding: 10px 0;
+}
+.social-block__item{
+	padding-left: rem(20px);
+	display: flex;
+	&:first-child{
+		padding-left: 0;
+	}
+}
+.social-block__item img{
+	width: rem(23px);
+	height: rem(20px);
+}

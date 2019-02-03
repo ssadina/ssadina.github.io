@@ -4,24 +4,19 @@
     color: #ffffff;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: rem(4px);
     text-align: center;
     color: #ffffff;
     align-items: flex-end;
     text-transform: uppercase;
-    padding: 8px 15px;
-    font-size: 13px;
+    padding: rem(8px) rem(15px);
+    font-size: rem(13px);
     text-decoration: none;
 }
-
-.hero__order_btn {
-    margin-left: 15px;
-}
-
 .btn_bg_black{
 	background: #000;	
 }
 .btn_bg_order{
 	background: transparent;
-	margin-left: 5px;
+	margin-left: rem(5px);
 }

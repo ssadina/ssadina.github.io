@@ -3,32 +3,57 @@
 }
 .best__list{
 	display: flex;
+
+	@include phones () {
+	    flex-direction: column;
+	}
 }
 .best__item{
 	flex:1;
-	margin-right: 15px;
+	margin-right: rem(15px);
 	text-align: center;
 
 	&:last-child{
 		margin-right:0
 	};
+	@include phones () {
+		display: flex;
+	    flex-direction: row;
+	}
 }
-.best__imf{
+.best__img{
 	display: flex;
 	justify-content: center;
+	@include phones () {
+		width: 30%;
+	}
+
 }
 .best__icon{
-	display: inline-block;
+	width: 90%;
+	height: rem(100px);
+	svg {
+	max-width: 95%;
+	}
+}
+.best__icon-pic {
+
 }
 .best__desc-title{
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: 500;
     font-family: lifehack;
-    padding-top: 28px;
+    padding-top: rem(28px);
 }
 .best__desc-content{
-	padding-top: 10px;
-	font-size: 14px;
-	line-height: 24px;
+	padding-top: rem(10px);
+	font-size: rem(14px);
+	line-height: rem(24px);
 	font-family: Ubuntu;
+}
+.best__desc{
+	@include phones () {
+		text-align: left;
+		width: 70%;
+	}
 }

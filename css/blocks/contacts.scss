@@ -1,0 +1,52 @@
+.section_contacts{
+	position: relative;
+	background:transparent url('../img/map.png') center center /cover no-repeat;
+}
+
+.footer{
+	background: #2f3234 url('../img/bgcontacts.png')  center center /cover no-repeat;
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	left: 0;
+	right: 0;
+	font-size: rem(14px);
+	line-height: 1.714;
+}
+.contacts__tel{
+	position: relative;
+	color: $red;
+	font-weight: bold;
+	&:before{
+		content: url("../img/icons/phone.svg");
+		position: absolute;
+		left: rem(0px);
+    	top: 0.08rem;
+	}
+}
+.contacts__tel{
+	padding-left: rem(16px);
+}
+
+.footer__container {
+	display: flex;
+    justify-content: space-between;
+    padding: rem(10px) rem(80px) rem(10px) rem(80px);
+
+	@include tablets {
+   		padding: rem(10px) rem(24px) rem(10px) rem(24px);
+	}
+	@include phones {
+   		flex-direction: column;
+	    align-items: center;
+	}
+
+	    
+}
+.contacts{
+	@include phones {
+		display: flex;
+   		flex-direction: column;
+	    align-items: center;
+	}
+}

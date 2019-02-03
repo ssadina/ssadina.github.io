@@ -1,3 +1,12 @@
+.section_menu{
+	position: relative;
+	padding: 5.9375rem;
+	background: url("../img/bg_menu.png") 50% 50% /cover no-repeat;
+
+	@include tablets {
+		padding: rem(30px) rem(20px);
+	}
+}
 .accordion-menu{
 	position: absolute;
 	top: 0;
@@ -13,46 +22,48 @@
  .accordion-menu__item {
  	display: flex;
 
- 	&:hover {
+ 	&:hover,
+ 	&.active {
  		.accordion-menu__text{
- 			max-width: 500px;
+ 			max-width: rem(500px);
  		}
  	}
  }
-/* .accordion-menu__item {
- 	display: flex;
-}
-.accordion-menu__item:hover .accordion-menu__text {
-			max-width: 500px;
- } */
+
 .accordion-menu__link{
 	position: relative;
 	display: block;
-	width: 80px;
+	width: rem(60px);
 	flex: 1 0 auto;
-	background: url('../img/accordeon1.jpg') center /cover no-repeat;
+	
 
 	span{
 		position: absolute;
 		bottom: 0;
 		left: 50%;
-		transform: translate(-50%, 0) rotate(-90deg);
+		transform: translate(-25%, 0) rotate(-90deg);
 		color: #fff;
 		font-family: Gagalin-Regular;
-		font-size: 40px;
+		font-size: rem(40px);
 		transform-origin: 0 0;
 	}
 }
 .accordion-menu__text{
-	background-color: rgba(#2f3234, 0.9);
+	background-color: rgba(#393b3c, 0.9);
 	color: #fff;
 	overflow: hidden;
 	max-width: 0;
 	transition: 0.3s;
 
 	span{
-		padding: 35px;
+		padding: rem(35px);
 		display: inline-block;
-		width: 500px;
+		width: rem(500px);
+
+		@include tablets {
+			width: auto;
+		}
 	}
+
+
 }

@@ -1,5 +1,5 @@
 .header{
-	padding-top: 12px;
+	padding-top: rem(12px);
     justify-content: space-between;
 }
 .header, .menu__list {
@@ -10,13 +10,13 @@
 	display: flex;
 	align-items: center;
 	text-transform: uppercase;
-    font-size: 13px;
+    font-size: rem(13px);
 
 	&:after {
 		content: "";
-		margin: 0 10px;
-		width: 6px;
-		height: 6px;
+		margin: 0 rem(10px);
+		width: rem(6px);
+		height: rem(6px);
 		border-radius: 50%;
 		display: inline-block;
 		background: #ffffff;
@@ -39,4 +39,16 @@
 .nav{
 	color: #ffffff;
 	align-self: flex-start;
+}
+.header__links{
+	display: flex;
+}
+.menu{
+	flex:1;
+	text-align: right;
+	margin-right: rem(30px);
+
+	@include tablets{
+		display: none;
+	}
 }

@@ -1,8 +1,23 @@
 .radio__group{
 	display: flex;
-}
+
+	@include phones {
+	    flex: 1;
+	    display: flex;
+	    justify-content: space-between;
+}}
 .radio{
-	margin-right: 15px;
+	margin-right: rem(15px);
+	font-size: rem(14px);
+
+	@include phones {
+		margin-right:0;
+	}
+	&:fisrt-child {
+		@include phones {
+			margin-right: rem(5px);
+		}
+	}
 }
 .radio__input{
 	opacity: 0;
@@ -14,11 +29,11 @@
 }
 .radio__btn{
 	position: relative;
-	width: 15px;
-	height: 15px;
+	width: rem(16px);
+	height: rem(16px);
 	border-radius: 50%;
 	background-color: #fff;
-	margin-right: 5px;
+	margin-right: rem(5px);
 
 	&:after{
 		border-radius: 50%;
@@ -28,22 +43,19 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		background-color: $red;
-		width: 7.5px;
-		height: 7.5px;
+		width: rem(8px);
+		height: rem(8px);
 		opacity: 0;
 		transition:0.3;
 	}
 }
-.radio__text{
+.radio__text {
 	color: #fff;
 }
 .radio__input:checked + .radio__content .radio__btn:after{
 	opacity: 1;
 }
-.radio{
-	font-size: 14px;
 
-}
 .radio__group{
 	line-height: 1.6;
 }

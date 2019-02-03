@@ -6,10 +6,16 @@ $red: #e45028;
 @import "mics/normalize.css" screen;
 
 
+/*breakpoints*/
+$tablets: 768px;
+$phones: 480px;
+@import "./mics/media.scss";
+
 /*setup*/
-@import "mics/fonts.css" ;
+//@import "mics/fonts.css" ;
 @import "mics/mixins.css" ;
 @import "./mics/layout.scss" ;
+
 
 @font-face{
 	font-family: Gagalin-Regular, /*Lifehack, Ubuntu*/;
@@ -40,37 +46,8 @@ $red: #e45028;
 @import "./blocks/checkboks.scss";
 @import "./blocks/menu.scss";
 @import "./blocks/accordion-menu.scss";
-
-
-.fixed-menu{
-	position: fixed;
-	top: 90px;
-	right: 20px;
-}
-.fixed-menu__item{
-	display: block;
-	width: 10px;
-	height: 10px;
-	border: 1px solid transparent;
-	position: relative;
-	border-radius: 50%;
-	margin-bottom: 20px;
-
-	&:hover{
-		border-color:#fff;
-		cursor: pointer;
-	}
-
-	&:after{
-		content:"";
-		position:absolute;
-		top:50%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-		width: 4px;
-		height: 4px;
-		border-radius: 50%;
-		background: #fff;
-
-	};
-}
+@import "./blocks/team.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/social-block.scss";
+@import "./blocks/humburger-menu-link.scss";
+@import "./blocks/fixed-menu.scss";

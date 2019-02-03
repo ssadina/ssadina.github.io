@@ -3,67 +3,99 @@
 }
 .form__row{
 	display: flex;
-	padding-bottom: 13px;
+	padding-bottom: rem(13px);
 
 	&:first-child{
 		padding-top: 0;
 	}
+
+	@include phones {
+		justify-content: center;
+	}
 }
 
 .form__block{
-	margin-right: 20px;
+	margin-right: rem(20px);
 	flex: 1;
 
 	&:last-child{
 		margin-right: 0;
 	}; 
+
+	@include tablets {
+		display: flex;
+		flex-direction: column;
+	}
 }
 .form__block-input{
-	border-radius: 5px;
+	border-radius: rem(5px);
 	background: #fff;
 	border: none;
 	width: 100%;
-	padding: 7px 10px;
+	padding: rem(7px) rem(10px);
 	outline: none;
-	border: 2px solid transparent;
+	border: rem(2px) solid transparent;
 
 	&:focus{
-			border: 2px solid $yellow;
+			border: rem(2px) solid $yellow;
 	}
 }
 .form__block-textarea{
-	border-radius: 5px;
+	border-radius: rem(5px);
 	background: #fff;
 	border: none;
 	width: 100%;
-	padding: 5px 10px;
+	padding: rem(5px) rem(10px);
 	outline: none;
-	border: 2px solid transparent;
-	height: 109px;
-	resize:none;
+	border: rem(2px) solid transparent;
+	height: rem(109px);
+	resize: none;
 
 	&:focus{
-			border: 2px solid $yellow;
+			border: rem(2px) solid $yellow;
 	}
 }
 .form__block-title {
     color: #fff;
-    font-size: 14px;
-    line-height: 24px;
-    padding-bottom: 3px;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    padding-bottom: rem(3px);
 }
-.left_block, .right_block {
+.order__form-left_block, .order__form-right_block {
     width: 50%;
+      
+     @include tablets {
+		width: auto;
+		padding-left: 0;
+		padding-right: 0;
+		display: flex;
+		flex-direction: column;
+	}
 }
-.form {
+
+.order__form {
     display: flex;
-    margin: 0px 50px;
+    margin: rem(0px) rem(50px);
+
+    @include tablets {
+		flex-direction: column;
+    }
 }
-.left_block{
-	padding-right: 10px;
+.order__form-left_block{
+	padding-right: rem(10px);
+
+	 @include tablets {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
-.right_block {
-	padding-left: 10px;
+.order__form-right_block {
+	padding-left: rem(10px);
+
+	 @include tablets {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .form__block-submit:focus{

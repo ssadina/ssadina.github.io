@@ -1,35 +1,26 @@
 /*
-Error: Undefined variable: "$red".
-        on line 30 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\radio.scss
+Error: Undefined mixin 'phones'.
+        on line 4 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\radio.scss, in `phones'
+        from line 4 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\radio.scss
 
-25: 		position: absolute;
-26: 		content: "";
-27: 		top: 50%;
-28: 		left: 50%;
-29: 		transform: translate(-50%, -50%);
-30: 		background-color: $red;
-31: 		width: 7.5px;
-32: 		height: 7.5px;
-33: 		opacity: 0;
-34: 		transition:0.3;
-35: 	}
+1: .radio__group{
+2: 	display: flex;
+3: 
+4: 	@include phones {
+5: 	    flex: 1;
+6: 	    display: flex;
+7: 	    justify-content: space-between;
+8: }}
+9: .radio{
 
 Backtrace:
-C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\radio.scss:30
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\radio.scss:4:in `phones'
+C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\radio.scss:4
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -73,4 +64,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$red\".\A         on line 30 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\radio.scss\A \A 25: 		position: absolute;\A 26: 		content: \"\";\A 27: 		top: 50%;\A 28: 		left: 50%;\A 29: 		transform: translate(-50%, -50%);\A 30: 		background-color: $red;\A 31: 		width: 7.5px;\A 32: 		height: 7.5px;\A 33: 		opacity: 0;\A 34: 		transition:0.3;\A 35: 	}"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 4 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\radio.scss, in `phones'\A         from line 4 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\radio.scss\A \A 1: .radio__group{\A 2: 	display: flex;\A 3: \A 4: 	@include phones {\A 5: 	    flex: 1;\A 6: 	    display: flex;\A 7: 	    justify-content: space-between;\A 8: }}\A 9: .radio{"; }

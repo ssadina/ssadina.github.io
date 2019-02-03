@@ -8,7 +8,7 @@ Error: Undefined variable: "$red".
 4:     color: #ffffff;
 5:     border: none;
 6:     cursor: pointer;
-7:     border-radius: 4px;
+7:     border-radius: rem(4px);
 8:     text-align: center;
 
 Backtrace:
@@ -59,4 +59,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$red\".\A         on line 3 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\button.scss\A \A 1: \A 2: .button {\A 3: 	background: $red;\A 4:     color: #ffffff;\A 5:     border: none;\A 6:     cursor: pointer;\A 7:     border-radius: 4px;\A 8:     text-align: center;"; }
+  content: "Error: Undefined variable: \"$red\".\A         on line 3 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\button.scss\A \A 1: \A 2: .button {\A 3: 	background: $red;\A 4:     color: #ffffff;\A 5:     border: none;\A 6:     cursor: pointer;\A 7:     border-radius: rem(4px);\A 8:     text-align: center;"; }

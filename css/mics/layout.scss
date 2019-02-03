@@ -1,24 +1,40 @@
+html {
+	font-size: 16px;
+	
+	  @include tablets() {
+	    font-size: 14px;
+	  }
+
+	  @include phones() {
+	    font-size: 12px;
+	  }
+}
 body{
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 13px;
+	//font-size: rem(13px);
 }
 
 .wrapper{
 	overflow: hidden;
 	min-height: 100%;
 	width: 100%;
-	min-width: 940px;
+	// min-width: rem(940px);
 }
-.container{
-	width: 940px;
+/* .container_center{
 	margin: 0 auto;
+} */
+.container{
+	display: flex;
+	max-width: rem(940px); 
+	width: 95%;
 }
 .section {
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
 }
 .section_centered{
 	.container{
+		margin: 0 auto;
 		height: 100%;
 		display: flex;
 		justify-content: center;
