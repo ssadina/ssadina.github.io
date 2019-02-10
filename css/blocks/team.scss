@@ -1,5 +1,5 @@
 .section_team {
-    background: url(../img/bgteam.jpg) center center/cover #393b3c;
+    background: url(../img/bgteam.jpg) center top /cover #393b3c;
 	position: relative;
 }
 .team__block{
@@ -12,6 +12,9 @@
 
 	@include tablets {
 		left: 0;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
 	}
 }
 .team__inner-block{

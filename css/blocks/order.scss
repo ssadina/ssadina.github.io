@@ -1,6 +1,8 @@
 .order{
 	background: url(../img/bg_order.jpg) center center /cover no-repeat;
-}
+	.container{
+    	justify-content: center;
+}}
 .form__row{
 	display: flex;
 	padding-bottom: rem(13px);

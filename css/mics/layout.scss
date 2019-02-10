@@ -33,12 +33,14 @@ body{
     min-height: rem(650px);
 }
 .section_centered{
+
+		display: flex;
+		justify-content: center;
 	.container{
 		margin: 0 auto;
 		height: 100%;
 		display: flex;
-		justify-content: center;
-		flex-direction: column;
+		flex-direction:column;
 	}
 	.title{
 		width: 100%;

@@ -1,22 +1,46 @@
 /*
-Error: Undefined variable: "$yellow".
-        on line 4 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\title.scss
+Error: Undefined variable: "$red".
+        on line 12 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\composition.scss
 
-1: 
-2: .title{
-3: 		font-family: Gagalin-Regular;
-4: 		color: $yellow;
-5: 		font-size: rem(72px);
-6: 		margin: 0;
-7: 		line-height: rem(63px);
-8: 		margin-bottom: rem(45px);
-9: }
+7: 	&:hover{
+8: 		.composition__drop{
+9: 			opacity: 1;
+10: 		}
+11: 		.composition__btn{
+12: 			background-color: $red;
+13: 		}
+14: 	}
+15: }
+16: .composition__btn{
+17: 	display: flex;
 
 Backtrace:
-C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\title.scss:4
+C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\composition.scss:12
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -60,4 +84,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 4 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\title.scss\A \A 1: \A 2: .title{\A 3: 		font-family: Gagalin-Regular;\A 4: 		color: $yellow;\A 5: 		font-size: rem(72px);\A 6: 		margin: 0;\A 7: 		line-height: rem(63px);\A 8: 		margin-bottom: rem(45px);\A 9: }"; }
+  content: "Error: Undefined variable: \"$red\".\A         on line 12 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\composition.scss\A \A 7: 	&:hover{\A 8: 		.composition__drop{\A 9: 			opacity: 1;\A 10: 		}\A 11: 		.composition__btn{\A 12: 			background-color: $red;\A 13: 		}\A 14: 	}\A 15: }\A 16: .composition__btn{\A 17: 	display: flex;"; }

@@ -8,7 +8,7 @@ Error: Undefined mixin 'tablets'.
 48: 	text-align: right;
 49: 	margin-right: rem(30px);
 50: 
-51: 	@include tablets{
+51: 	@include tablets {
 52: 		display: none;
 53: 	}
 54: }
@@ -64,4 +64,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 51 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\header.scss, in `tablets'\A         from line 51 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\header.scss\A \A 46: .menu{\A 47: 	flex:1;\A 48: 	text-align: right;\A 49: 	margin-right: rem(30px);\A 50: \A 51: 	@include tablets{\A 52: 		display: none;\A 53: 	}\A 54: }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 51 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\header.scss, in `tablets'\A         from line 51 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\header.scss\A \A 46: .menu{\A 47: 	flex:1;\A 48: 	text-align: right;\A 49: 	margin-right: rem(30px);\A 50: \A 51: 	@include tablets {\A 52: 		display: none;\A 53: 	}\A 54: }"; }

@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 12 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss, in `phones'
-        from line 12 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss
+        on line 14 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss, in `phones'
+        from line 14 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss
 
-7: 
-8: 	&:first-child{
-9: 		padding-top: 0;
-10: 	}
-11: 
-12: 	@include phones {
-13: 		justify-content: center;
-14: 	}
-15: }
-16: 
-17: .form__block{
+9: 
+10: 	&:first-child{
+11: 		padding-top: 0;
+12: 	}
+13: 
+14: 	@include phones {
+15: 		justify-content: center;
+16: 	}
+17: }
+18: 
+19: .form__block{
 
 Backtrace:
-C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss:12:in `phones'
-C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss:12
+C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss:14:in `phones'
+C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss:14
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 12 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss, in `phones'\A         from line 12 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss\A \A 7: \A 8: 	&:first-child{\A 9: 		padding-top: 0;\A 10: 	}\A 11: \A 12: 	@include phones {\A 13: 		justify-content: center;\A 14: 	}\A 15: }\A 16: \A 17: .form__block{"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 14 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss, in `phones'\A         from line 14 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\order.scss\A \A 9: \A 10: 	&:first-child{\A 11: 		padding-top: 0;\A 12: 	}\A 13: \A 14: 	@include phones {\A 15: 		justify-content: center;\A 16: 	}\A 17: }\A 18: \A 19: .form__block{"; }

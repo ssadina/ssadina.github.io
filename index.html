@@ -7,6 +7,9 @@
 	<!--link rel="stylesheet" type="text/css" href="css/normalize.css"-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+	<!--script src="https://api-maps.yandex.ru/2.1/?apikey=7cabbb44-47e9-4799-a217-57eef673ad76" type="text/javascript"></script-->
+
+
 </head>
 <body>
 	<div class="wrapper">
@@ -108,6 +111,115 @@
 					</li>
 				</ul>
 			</div>
+		</section>
+		<section class="section section_centered section_slider">
+			<div class="container">
+				<div class="slider">
+					<div class="slider__arrows">
+						<div class="slider__arrow slider__arrow_left">
+							<img src="./img/icons/arrow-scroll.png" class="slider__arrow_icon">
+							<svg class="slider__arrow_icon">
+								<use xlink:href="img/icon/sprite.svg#arrow-scroll">
+							</svg>
+						</div>
+						<div class="slider__arrow slider__arrow_right">
+							<img src="./img/icons/arrow-scroll.png" class="slider__arrow_icon">
+							<svg class="slider__arrow_icon">
+								<use xlink:href="img/icon/sprite.svg#arrow-scroll">
+							</svg>
+						</div>
+					</div>
+					<ul class="slider__list">
+						<li class="slider__item">
+							<div class="slider__col slider__col_img">
+								<img src="./img/dark_burger.png" alt="" class="slider__img">
+								<div class="composition">
+									<div class="composition__btn">
+										<svg class="composition__btn_icon">
+											<use xlinl:href="./img/icons/sprite.svg#humburger"></use>
+										</svg>
+										состав
+									</div>
+									<div class="composition__drop">
+										<ul class="composition__list">
+											<li class="composition__item">
+												<div class="composition__icon">
+													<svg class="composition__btn_icon">
+														<use xlink:href="img/icon/sprite.svg#humburger">
+													</svg>
+												</div>
+												<div class="composition__text">Говядина</div>
+												<div class="composition__weight">300 г</div>
+											</li>
+											<li class="composition__item">
+												<div class="composition__icon">
+													<svg class="composition__btn_icon">
+														<use xlink:href="img/icon/sprite.svg#buns">
+													</svg>
+												</div>
+												<div class="composition__text">Булочки</div>
+												<div class="composition__weight">100 г</div>
+											</li>
+											<li class="composition__item">
+												<div class="composition__icon">
+													<svg class="composition__btn_icon">
+														<use xlink:href="img/icon/sprite.svg#salad">
+													</svg>
+												</div>
+												<div class="composition__text">Зелень</div>
+												<div class="composition__weight">70 г</div>
+											</li>
+											<li class="composition__item">
+												<div class="composition__icon">
+													<svg class="composition__btn_icon">
+														<use xlink:href="img/icon/sprite.svg#sauce">
+													</svg>
+												</div>
+												<div class="composition__text">Соус</div>
+												<div class="composition__weight">150 г</div>
+											</li>
+											<li class="composition__item">
+												<div class="composition__icon">
+													<svg class="composition__btn_icon">
+														<use xlink:href="img/icon/sprite.svg#cucumber">
+													</svg>
+												</div>
+												<div class="composition__text">Овощи</div>
+												<div class="composition__weight">200 г</div>
+											</li>
+											<li class="composition__item">
+												<div class="composition__icon">
+													<svg class="composition__btn_icon">
+														<use xlink:href="img/icon/sprite.svg#cheese">
+													</svg>
+												</div>
+												<div class="composition__text">Сыр</div>
+												<div class="composition__weight">80 г</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="slider__kkal">
+									<img src="./img/icons/kkal.svg" class="kkal_icon">
+									<svg class="kkal_icon">
+										<use xlink:href="img/icon/sprite.svg#akkal">
+									</svg>
+								</div>
+							</div>
+							<div class="slider__col">
+								<div class="title__left title title__white slider__title">Dark BEEF Burger</div>
+								<div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+								<div class="slider__info">
+									<div class="slider__cost"><span>500</span> рублей</div>
+									<a href="#" class="button">Заказать</a>
+								</div>
+							</div>
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+
 		</section>
 		<section class="section section_team">
 			<div class="container">
@@ -380,7 +492,7 @@
 								<input type="submit" value="Заказать" class="button form__block-submit">
 							</label>
 								<label for="" class="form__block-submit">
-								<input type="submit" value="Очистить" class="button btn_bg_order form__block-submit">
+								<input type="reset" value="Очистить" class="button btn_bg_order form__block-submit">
 							</label>
 
 						</div>
@@ -390,7 +502,7 @@
 		</section>
 		<section class="section section_contacts">
 			<div class="container">
-				<div class="map"></div>
+				<div class="map" id="map" style="width: 600px; height: 400px"></div>
 				<footer class="footer">
 					<div class="footer__container">
 						<div class="contacts">
@@ -399,10 +511,10 @@
 						</div>
 						<div class="contacts__social-block">
 							<ul class="social-block__list">
-								<li class="social-block__item"><img src="./img/icons/vk.svg"></li>
-								<li class="social-block__item"><img src="./img/icons/fb.svg"></li>
-								<li class="social-block__item"><img src="./img/icons/inst.svg"></li>
-								<li class="social-block__item"><img src="./img/icons/twitter.svg"></li>
+								<li class="social-block__item"><a href="#"><img src="./img/icons/vk.svg"></a></li>
+								<li class="social-block__item"><a href="#"><img src="./img/icons/fb.svg"></a></li>
+								<li class="social-block__item"><a href="#"><img src="./img/icons/inst.svg"></a></li>
+								<li class="social-block__item"><a href="#"><img src="./img/icons/twitter.svg"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -422,6 +534,43 @@
 				<li class="fixed-menu__item"><a href="#"></a></li>
 			</ul>
 		</nav>	
+		<nav class="mobile-menu">
+			<div class="mobile-menu__buttons">
+				<div class="logo mobile-menu__logo">
+					<img src="img/logo.svg" alt="logo">
+				</div>
+				<div class="close">
+					<img class="close_btn" src="./img/icons/close.svg" alt="close">
+					<!--svg class="close-icon">
+						<use xlink:href="./img/icons/sprite.svg#close"></use>
+					</svg-->
+				</div>
+			</div>
+			<ul class="mobile-menu__list">
+				<li class="mobile-menu__item">
+					<a href="#" class="menu__link">О нас</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="menu__link">Бургеры</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="menu__link">Команда</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="menu__link">Меню</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="menu__link">Отзывы</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="menu__link">Как мы работаем</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="menu__link">Контакты</a>
+				</li>
+			</ul>
+		</nav>	
 	</div>
+		<script src="./js/script.js" type="text/javascript"></script>
 </body>
 </html>

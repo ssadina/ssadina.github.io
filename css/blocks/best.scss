@@ -1,5 +1,9 @@
 .best{
 	background: url(../img/bg_best.png) center center/ cover no-repeat;
+
+	.container{
+		justify-content: center;
+	}
 }
 .best__list{
 	display: flex;

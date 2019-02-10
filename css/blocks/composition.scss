@@ -1,0 +1,63 @@
+.composition{
+	position: absolute;
+	left: rem(10px);
+	top: rem(0px);
+	cursor: pointer;
+
+	&:hover{
+		.composition__drop{
+			opacity: 1;
+		}
+		.composition__btn{
+			background-color: $red;
+		}
+	}
+}
+.composition__btn{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	border-radius: rem(5px);
+	width: rem(90px);
+	height: rem(90px);
+	background-color: #f08c33;
+	color: #fff;
+}
+.composition__btn_icon{
+	width: rem(50px);
+	height: rem(50px);
+	fill: #fff;
+}
+.composition__drop{
+	position: absolute;
+	left: rem(90px);
+	top: 0;
+	border-radius: rem(5px);
+	background-color: rgba(#fff, 0.85);
+	padding: rem(20px);
+	opacity: 0;
+	transition: opacity 0.3;
+}
+.composition__list{
+	display: table;
+}
+.composition__item{
+	display: table-row;
+}
+.composition__icon, 
+.composition__text, 
+.composition__weight{
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: rem(10px);
+}
+.composition__text{
+	font-family: "Ubuntu";
+	font-weight: 500;
+	font-size: rem(14px);
+}
+.composition__weight{
+	font-weight: 300;
+	white-space: nowrap;
+}
