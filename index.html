@@ -117,15 +117,14 @@
 				<div class="slider">
 					<div class="slider__arrows">
 						<div class="slider__arrow slider__arrow_left">
-							<img src="./img/icons/arrow-scroll.png" class="slider__arrow_icon">
 							<svg class="slider__arrow_icon">
-								<use xlink:href="img/icon/sprite.svg#arrow-scroll">
-							</svg>
+				            	<use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
+				          	</svg>
+
 						</div>
 						<div class="slider__arrow slider__arrow_right">
-							<img src="./img/icons/arrow-scroll.png" class="slider__arrow_icon">
 							<svg class="slider__arrow_icon">
-								<use xlink:href="img/icon/sprite.svg#arrow-scroll">
+								<use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
 							</svg>
 						</div>
 					</div>
@@ -135,8 +134,8 @@
 								<img src="./img/dark_burger.png" alt="" class="slider__img">
 								<div class="composition">
 									<div class="composition__btn">
-										<svg class="composition__btn_icon">
-											<use xlinl:href="./img/icons/sprite.svg#humburger"></use>
+										<svg class="composition__btn_icon burger">
+											<use xlink:href="./img/icons/sprite.svg#burger"></use>
 										</svg>
 										состав
 									</div>
@@ -145,7 +144,7 @@
 											<li class="composition__item">
 												<div class="composition__icon">
 													<svg class="composition__btn_icon">
-														<use xlink:href="img/icon/sprite.svg#humburger">
+														<use xlink:href="./img/icons/sprite.svg#beef"></use>
 													</svg>
 												</div>
 												<div class="composition__text">Говядина</div>
@@ -154,7 +153,7 @@
 											<li class="composition__item">
 												<div class="composition__icon">
 													<svg class="composition__btn_icon">
-														<use xlink:href="img/icon/sprite.svg#buns">
+														<use xlink:href="./img/icons/sprite.svg#buns"></use>
 													</svg>
 												</div>
 												<div class="composition__text">Булочки</div>
@@ -163,7 +162,7 @@
 											<li class="composition__item">
 												<div class="composition__icon">
 													<svg class="composition__btn_icon">
-														<use xlink:href="img/icon/sprite.svg#salad">
+														<use xlink:href="./img/icons/sprite.svg#salad"></use>
 													</svg>
 												</div>
 												<div class="composition__text">Зелень</div>
@@ -172,7 +171,7 @@
 											<li class="composition__item">
 												<div class="composition__icon">
 													<svg class="composition__btn_icon">
-														<use xlink:href="img/icon/sprite.svg#sauce">
+														<use xlink:href="./img/icons/sprite.svg#sauce"></use>
 													</svg>
 												</div>
 												<div class="composition__text">Соус</div>
@@ -181,7 +180,7 @@
 											<li class="composition__item">
 												<div class="composition__icon">
 													<svg class="composition__btn_icon">
-														<use xlink:href="img/icon/sprite.svg#cucumber">
+														<use xlink:href="./img/icons/sprite.svg#cucumber">
 													</svg>
 												</div>
 												<div class="composition__text">Овощи</div>
@@ -190,7 +189,7 @@
 											<li class="composition__item">
 												<div class="composition__icon">
 													<svg class="composition__btn_icon">
-														<use xlink:href="img/icon/sprite.svg#cheese">
+														<use xlink:href="./img/icons/sprite.svg#cheese">
 													</svg>
 												</div>
 												<div class="composition__text">Сыр</div>
@@ -200,9 +199,8 @@
 									</div>
 								</div>
 								<div class="slider__kkal">
-									<img src="./img/icons/kkal.svg" class="kkal_icon">
 									<svg class="kkal_icon">
-										<use xlink:href="img/icon/sprite.svg#akkal">
+										<use xlink:href="./img/icons/sprite.svg#kkal">
 									</svg>
 								</div>
 							</div>
@@ -534,7 +532,7 @@
 				<li class="fixed-menu__item"><a href="#"></a></li>
 			</ul>
 		</nav>	
-		<nav class="mobile-menu">
+		<div class="mobile-menu">
 			<div class="mobile-menu__buttons">
 				<div class="logo mobile-menu__logo">
 					<img src="img/logo.svg" alt="logo">
@@ -546,30 +544,32 @@
 					</svg-->
 				</div>
 			</div>
-			<ul class="mobile-menu__list">
-				<li class="mobile-menu__item">
-					<a href="#" class="menu__link">О нас</a>
-				</li>
-				<li class="mobile-menu__item">
-					<a href="#" class="menu__link">Бургеры</a>
-				</li>
-				<li class="mobile-menu__item">
-					<a href="#" class="menu__link">Команда</a>
-				</li>
-				<li class="mobile-menu__item">
-					<a href="#" class="menu__link">Меню</a>
-				</li>
-				<li class="mobile-menu__item">
-					<a href="#" class="menu__link">Отзывы</a>
-				</li>
-				<li class="mobile-menu__item">
-					<a href="#" class="menu__link">Как мы работаем</a>
-				</li>
-				<li class="mobile-menu__item">
-					<a href="#" class="menu__link">Контакты</a>
-				</li>
-			</ul>
-		</nav>	
+			<nav class="mobile-menu__nav">
+				<ul class="mobile-menu__list">
+					<li class="mobile-menu__item">
+						<a href="#" class="menu__link">О нас</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="#" class="menu__link">Бургеры</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="#" class="menu__link">Команда</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="#" class="menu__link">Меню</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="#" class="menu__link">Отзывы</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="#" class="menu__link">Как мы работаем</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="#" class="menu__link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</div>
 		<script src="./js/script.js" type="text/javascript"></script>
 </body>

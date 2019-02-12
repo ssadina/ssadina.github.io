@@ -1097,8 +1097,6 @@ ul {
 
 .slider__kkal {
   position: absolute;
-  width: 70px;
-  height: 76px;
   bottom: 0;
   left: 25px; }
   @media screen and (max-width: 768px) {
@@ -1107,6 +1105,10 @@ ul {
       bottom: auto;
       top: 0;
       right: 0; } }
+
+.kkal_icon {
+  width: 70px;
+  height: 76px; }
 
 .composition {
   position: absolute;

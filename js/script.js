@@ -1,17 +1,39 @@
+//mobile-menu
+
 var close = document.querySelector('.close');
 var opened = document.querySelector('.humburger-menu-link');
-var mobile_menu = document.querySelector('.mobile-menu');
+var mobileMenu = document.querySelector('.mobile-menu');
 
 opened.addEventListener('click', () =>{
-    mobile_menu.classList.add('opened');
+    mobileMenu.classList.add('opened');
 })
 
 
 close.addEventListener('click', () =>{
-    mobile_menu.classList.remove('opened');
+    mobileMenu.classList.remove('opened');
 })
 
 
+//accordion-team
+
+var teamItem = document.querySelectorAll('.team__item');
+
+for (let i = 0; i < teamItem.length; i++) {
+    teamItem[i].addEventListener('click',()=>{
+        if (teamItem[i].classList.contains('active')){        
+            teamItem[i].classList.remove('active');
+        } else {
+
+            teamItem.forEach(elem=>{
+                elem.classList.remove('active');
+            })
+
+            teamItem[i].classList.add('active'); 
+            }
+    })
+}
+
+//accordion-menu
 
 
 
