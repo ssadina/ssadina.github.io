@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 32 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss, in `tablets'
-        from line 32 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss
+        on line 20 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss, in `tablets'
+        from line 20 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss
 
-27: 	min-height: 150px;
-28: 
-29: }
-30: .slider__img{
-31: 	max-width: 100%;
-32: 	@include tablets {
-33: 		max-width: 100%;
-34:     	max-height: 100%;
-35: 	}	
-36: }
-37: .slider__item{
+15: 	// height: rem(475px);    нужна ли она?
+16: 	align-items: center;
+17:     display: flex;
+18:     overflow: hidden;
+19: 
+20: 	@include tablets {
+21: 		padding-top: 40px;
+22: 		padding-bottom: 40px;
+23: 		}	
+24: }
+25: .slider__list{
 
 Backtrace:
-C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss:32:in `tablets'
-C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss:32
+C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss:20:in `tablets'
+C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss:20
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 32 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss, in `tablets'\A         from line 32 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss\A \A 27: 	min-height: 150px;\A 28: \A 29: }\A 30: .slider__img{\A 31: 	max-width: 100%;\A 32: 	@include tablets {\A 33: 		max-width: 100%;\A 34:     	max-height: 100%;\A 35: 	}	\A 36: }\A 37: .slider__item{"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 20 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss, in `tablets'\A         from line 20 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss\A \A 15: 	// height: rem(475px);    нужна ли она?\A 16: 	align-items: center;\A 17:     display: flex;\A 18:     overflow: hidden;\A 19: \A 20: 	@include tablets {\A 21: 		padding-top: 40px;\A 22: 		padding-bottom: 40px;\A 23: 		}	\A 24: }\A 25: .slider__list{"; }

@@ -1,0 +1,9 @@
+.form-popap {
+  display: none;
+  opacity: 0; }
+  .form-popap.active {
+    display: block;
+    position: fixed;
+    opacity: 1; }
+
+/*# sourceMappingURL=form-popap.css.map */

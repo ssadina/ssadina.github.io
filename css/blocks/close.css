@@ -1,4 +1,4 @@
-.close {
+.close_x {
   position: absolute;
   top: rem(32px);
   right: rem(32px);
@@ -9,5 +9,9 @@
 .close_btn {
   width: rem(20px);
   height: rem(20px); }
+
+.close-icon {
+  width: rem(15px);
+  height: rem(15px); }
 
 /*# sourceMappingURL=close.css.map */

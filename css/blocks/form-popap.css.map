@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAY;EACR,OAAO,EAAE,IAAI;EAChB,OAAO,EAAE,CAAC;EAEV,kBAAS;IACR,OAAO,EAAE,KAAK;IACd,QAAQ,EAAE,KAAK;IACf,OAAO,EAAE,CAAC",
+"sources": ["form-popap.scss"],
+"names": [],
+"file": "form-popap.css"
+}

@@ -21,11 +21,19 @@
 		content: url("../img/icons/phone.svg");
 		position: absolute;
 		left: rem(0px);
-    	top: 0.08rem;
+    	top: rem(-3px);
+
+    	@include phones {
+    		top: rem(2px);
+    	}
 	}
 }
 .contacts__tel{
 	padding-left: rem(16px);
+}
+a[href^="tel:"] {
+  color: $red;
+  text-decoration: none;
 }
 
 .footer__container {

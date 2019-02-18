@@ -22,7 +22,6 @@
  .accordion-menu__item {
  	display: flex;
 
- 	&:hover,
  	&.active {
  		.accordion-menu__text{
  			max-width: rem(500px);
@@ -41,11 +40,12 @@
 		position: absolute;
 		bottom: 0;
 		left: 50%;
-		transform: translate(-25%, 0) rotate(-90deg);
+		transform: translate(-10%, 0) rotate(-90deg);
 		color: #fff;
 		font-family: Gagalin-Regular;
 		font-size: rem(40px);
 		transform-origin: 0 0;
+		white-space: nowrap;
 	}
 }
 .accordion-menu__text{

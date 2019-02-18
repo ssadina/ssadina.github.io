@@ -1,17 +1,34 @@
+
+
 //mobile-menu
 
-var close = document.querySelector('.close');
-var opened = document.querySelector('.humburger-menu-link');
+var close = document.querySelectorAll('.close');
+var humburgerMenuLink = document.querySelector('.humburger-menu-link');
 var mobileMenu = document.querySelector('.mobile-menu');
 
-opened.addEventListener('click', () =>{
-    mobileMenu.classList.add('opened');
-})
+     humburgerMenuLink.addEventListener('click', () =>{
+        mobileMenu.classList.add('opened');
+    })   
+
+function opened(){
+    //  humburgerMenuLink.addEventListener('click', () =>{
+    //     mobileMenu.classList.add('opened');
+    // })   
+}
+
+function closed(elemClosed){
+    for (let i = 0; i < close.length; i++) {
+        close[i].addEventListener('click', () =>{
+        elemClosed.classList.remove('opened');
+        // reviewsPopup.classList.remove('opened');
+        })
+    }
+}
 
 
-close.addEventListener('click', () =>{
-    mobileMenu.classList.remove('opened');
-})
+closed(mobileMenu);
+
+
 
 
 //accordion-team
@@ -24,7 +41,7 @@ for (let i = 0; i < teamItem.length; i++) {
             teamItem[i].classList.remove('active');
         } else {
 
-            teamItem.forEach(elem=>{
+            teamItem.forEach(elem =>{
                 elem.classList.remove('active');
             })
 
@@ -35,20 +52,149 @@ for (let i = 0; i < teamItem.length; i++) {
 
 //accordion-menu
 
+var menuItem = document.querySelectorAll('.accordion-menu__item');
+var menuItemLink = document.querySelectorAll('.accordion-menu__link');
+
+for (i = 0; i < menuItemLink.length; i++) {
+    menuItemLink[i].addEventListener('click', function(event){
+        event.preventDefault();
+    })
+}
+
+for (let j = 0; j < menuItem.length; j++) {
+    menuItem[j].addEventListener('click',()=>{
+        if (menuItem[j].classList.contains('active')){        
+            menuItem[j].classList.remove('active');
+        } else {
+            menuItem.forEach(elem =>{
+                elem.classList.remove('active');
+            })
+
+            menuItem[j].classList.add('active');
+        }
+    })
+}
+
+
+//reviews_popup
+
+
+var reviewsPopup = document.querySelector('.reviews__popup');
+var reviewsBtn = document.querySelectorAll('.reviews__btn');
+var reviewsBtnLink = document.querySelectorAll('.button');
+
+for (let i = 0; i < reviewsBtnLink.length; i++) {
+    reviewsBtnLink[i].addEventListener('click', function(event){
+        event.preventDefault();
+    })
+}
+
+for (let i = 0; i < reviewsBtn.length; i++) {
+    reviewsBtn[i].addEventListener('click',function(event){
+        event.preventDefault();
+        reviewsPopup.classList.add('opened');
+    })
+}
+
+closed(reviewsPopup);
+
+
+
+//reviews_popup
+
+var right = document.querySelector('.slider__arrow_left');
+var left = document.querySelector('.slider__arrow_right');
+var sliderItem = document.querySelector('.slider__list');
+
+right.addEventListener('click', function(event){
+        loop('right')
+    });
+
+left.addEventListener('click', function(event){
+        loop('left')
+    });
+
+function loop (direction){
+    if (direction === right){
+        sliderItem.appendChild(sliderItem.firstElementChild);
+    } else {
+        sliderItem.insertBefore(sliderItem.lastElementChild, sliderItem.firstElementChild);
+    }
+}
+
+
+
+// validateForm
+
+var formOrder = document.querySelector('.order__form');
+var formButtonOrder = document.querySelector('.form__block-submit');
+var formPopap = document.querySelector('.form-popap');
+var formPopapText = document.querySelector('.form-popap__text');
+
+formButtonOrder.addEventListener('click', (event) =>{
+    event.preventDefault.formButtonOrder;
+    if (validateForm(formOrder)) {
+        var formData = new FormData(document.forms.formOrder);
+        formData.append("to","ssadina@list.ru");
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+        xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+        xhr.send(formData);
+
+        xhr.responseType = 'json';
+        xhr.addEventListener('load', ()=>{
+            if (xhr.response.status){
+                formPopapText.textContent = "Сообщение отправлено";
+                formPopap.classList.add('opened');
+            } else {
+                formPopapText.textContent = "Что-то пошло не так";
+            }
+         }); 
+
+        // xhr.send(JSON.stringify(data));
+
+    };
+});
+
+closed(formPopap);
+
+function validateForm(form){
+    var valid = true;
+    if(!validateField(form.elements.name)){
+        valid = false;
+    }
+    if(!validateField(form.elements.phone)){
+        valid = false;
+    }
+    if(!validateField(form.elements.street)){
+        valid = false;
+    }
+
+    return valid;
+};
+function validateField(field){
+    if (!field.checkValidity()){
+        field.nextElementSibling.textContent = field.validationMessage;
+        return false;
+    } else{
+        field.nextElementSibling.textContent = '';
+        return true;
+    };
+};
+
+
+
 
 
 /*var myMap;
 ymaps.ready(init);
 function init(){ 
-    // Создание карты.    
+   
     var myMap = new ymaps.Map("map", {
-        // Координаты центра карты.
-        // Порядок по умолчанию: «широта, долгота».
-        // Чтобы не определять координаты центра карты вручную,
-        // воспользуйтесь инструментом Определение координат.
+        
         center: [55.76, 37.64],
-        // Уровень масштабирования. Допустимые значения:
-        // от 0 (весь мир) до 19.
+        
         zoom: 7
     });
 }*/

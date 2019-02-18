@@ -12,12 +12,20 @@
 }
 .slider{
 	position: relative;
-	height: rem(475px);
+	// height: rem(475px);    нужна ли она?
 	align-items: center;
     display: flex;
+    overflow: hidden;
+
+	@include tablets {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		}	
 }
 .slider__list{
 	height: 100%;
+	width: 100%;
+	display: flex;
 }
 .slider__col_img {
 	position: relative;
@@ -29,15 +37,19 @@
 }
 .slider__img{
 	max-width: 100%;
-	@include tablets {
-		max-width: 100%;
-    	max-height: 100%;
-	}	
+	max-height: 80%;
+	// @include tablets {
+	// 	max-width: 100%;
+ //    	max-height: 80%;
+	// }	
 }
 .slider__item{
 	display: flex;
 	height: 100%;
-	margin: 0 rem(-10px);
+	// margin: 0 rem(-10px);
+
+	flex-shrink: 0;  //??
+	width: 100%;  //??
 
 	@include tablets {
 		flex-direction: column;
@@ -45,14 +57,14 @@
 }
 .slider__col{
 	flex:1;
-	padding: 0 rem(20px);
+	margin: 0 rem(20px);
 }
 .slider__text{
 	color: #fff;
 	font-size: rem(14px);
 	font-family: "Ubuntu";
 	line-height: 1.714;
-	margin-bottom: rem(20px);
+	margin-bottom: rem(50px);
 
 	@include tablets {
 		text-align: center;
@@ -75,10 +87,11 @@
 
 	span{
 		font-size: 2.5em;
-		line-height: rem(34px);
+		line-height: rem(28px);
 		
 	}
 }
+
 .slider__arrow_icon{
 	width: rem(28px);
 	height: rem(16px);
@@ -90,20 +103,22 @@
 
 .slider__arrow_left{
     position: absolute;
-    left: rem(-30px);
+    // left: rem(-30px);
+    left: rem(-8px);
     transform: rotate(90deg) translate(27%, -0%);
     cursor: pointer;
 }
 .slider__arrow_right{
 	position: absolute;
-    right: rem(-30px);
+    // right: rem(-30px);
+    right: rem(-8px);
     transform: rotate(-90deg) translate(26%, 0%);
     cursor: pointer;
 }
 
 .slider__kkal{
 	position: absolute;
-    bottom: 0;
+    bottom: 25px;
     left: 25px;
 
     @include tablets {
