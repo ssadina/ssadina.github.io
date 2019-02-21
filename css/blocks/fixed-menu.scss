@@ -20,11 +20,14 @@
 	border-radius: 50%;
 	margin-bottom: 20px;
 
+	&.active {
+		border-color:#fff;
+		cursor: pointer;
+	}
 	&:hover{
 		border-color:#fff;
 		cursor: pointer;
 	}
-
 	&:after{
 		content:"";
 		position:absolute;

@@ -1,0 +1,42 @@
+.arrow {
+  position: fixed;
+  left: 50%;
+  width: rem(60px);
+  height: rem(60px);
+  transform: translateX(-50%);
+  transition: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  &:hover {
+    .arrow__icon {
+      margin-top: rem(-15px);
+      width: rem(45px);
+      height: rem(45px);
+    }
+  }
+}
+.arrow__icon {
+  width: rem(40px);
+  height: rem(40px);
+  transition: .3s;
+  fill: #fff;
+}
+
+.down-arrow {
+  bottom: rem(20px);
+}
+.down-arrow__icon {
+
+}
+.up-arrow {
+  position: fixed;
+  top: 0;
+  -webkit-transform: rotate(-1800deg) translate(26%, 0%);
+  transform: rotate(-180deg) translate(26%, 0%);
+  cursor: pointer;
+}
+.hero .up-arrow{
+ /*  display: none; */
+}

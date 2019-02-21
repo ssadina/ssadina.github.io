@@ -185,16 +185,191 @@ function validateField(field){
 
 
 
+// one-page-scroll
+
+$ (function() {
+
+    var activeDots = function (index){
+        $('.wrapper')
+            .find('.fixed-menu__item')
+            .eq(index)
+            .addClass('active')
+            .siblings()
+            .removeClass('active');
+    }
 
 
-/*var myMap;
+    var generateDots = function () {
+        $('.section').each(function () {
+            var dot = $('<li>',{
+                attr : {
+                    class: 'fixed-menu__item'
+                },
+                html : '<a href="#"></a>'
+            });
+
+            $('.fixed-menu__list').append(dot);
+        });
+    };
+    generateDots();
+
+    var moveSection = function (container, sectionNum){
+        var 
+            sections = container.find('.section'),
+            activeSection = sections.filter('.active'),
+            reqSection = sections.eq(sectionNum),
+            reqIndex = reqSection.index(),
+            list = container.find('.one-page'),
+            duration = 500;
+
+        if(reqSection.length){
+            list.animate({
+            'top' : -reqIndex * 100 + '%'
+            }, duration, function(){
+                activeSection.removeClass('active');
+                reqSection.addClass('active');
+                activeDots(sectionNum);
+            });
+        }
+    }
+
+
+    $('.arrow').on('click', function(e){
+        e.preventDefault();
+
+        var $this = $(this),
+            container = $this.closest('.wrapper'),
+            sections = container.find('.section'),
+            activeSection = sections.filter('.active'),
+            nextSection = activeSection.next(),
+            prevSection = activeSection.prev();
+
+        if ($this.hasClass('down-arrow')) {
+             moveSection(container, nextSection.index());
+         } else{
+             moveSection(container, prevSection.index());
+         }
+
+    $('body').on('click', '.fixed-menu__item', function(e){
+        e.preventDefault();
+
+        var $this = $(this),
+            container = $this.closest('.wrapper'),
+            index = $this.index();
+
+            moveSection(container, index);
+            activeDots(index);
+    })
+        
+    });
+
+
+
+    // $('.up-arrow').on('click', function(e){
+    //     e.preventDefault();
+
+    //     var $this = $(this);
+    //         container = $this.closest('.wrapper'),
+    //         section = container.find('.section'),
+    //         activeSection = section.filter('.active'),
+    //         reqSection = activeSection.prev(),
+    //         reqIndex = reqSection.index(),
+    //         list = container.find('.one-page'),
+    //         duration = 500;
+
+    //     if(reqSection.length){
+    //         list.animate({
+    //         'top' : -reqIndex * 100 + '%'
+    //         }, duration, function(){
+    //             activeSection.removeClass('active');
+    //             reqSection.addClass('active');
+    //         });
+    //     }
+    // });
+});
+
+
+
+
+// map
+
+var myMap;
 ymaps.ready(init);
 function init(){ 
    
     var myMap = new ymaps.Map("map", {
-        
-        center: [55.76, 37.64],
-        
-        zoom: 7
+        center: [59.94, 30.32],
+        zoom: 12,
+        controls: ['zoomControl'],
+        behaviors: ['drag']
     });
-}*/
+
+    var myPlacemark1 = new ymaps.Placemark([59.8899, 30.3165], {        
+        hintContent: 'Лучшая бургерная!',
+        balloonContent: 'Самые вкусные бугеры у нас!',
+    }, {// Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+            iconImageHref: './img/icons/map-marker.svg',
+            // Размеры метки.
+            iconImageSize: [46, 57],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-23, -57],
+
+    });
+
+     var myPlacemark2 = new ymaps.Placemark([59.91, 30.49], {        
+        hintContent: 'Лучшая бургерная!',
+        balloonContent: 'Самые вкусные бугеры у нас!',
+    }, {// Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+            iconImageHref: './img/icons/map-marker.svg',
+            // Размеры метки.
+            iconImageSize: [46, 57],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-23, -57],
+
+    });
+
+      var myPlacemark3 = new ymaps.Placemark([59.9764, 30.312], {        
+        hintContent: 'Лучшая бургерная!',
+        balloonContent: 'Самые вкусные бугеры у нас!',
+    }, {// Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+            iconImageHref: './img/icons/map-marker.svg',
+            // Размеры метки.
+            iconImageSize: [46, 57],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-23, -57],
+
+    });
+
+       var myPlacemark4 = new ymaps.Placemark([59.9466, 30.3827], {        
+        hintContent: 'Лучшая бургерная!',
+        balloonContent: 'Самые вкусные бугеры у нас!',
+    }, {// Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+            iconImageHref: './img/icons/map-marker.svg',
+            // Размеры метки.
+            iconImageSize: [46, 57],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-23, -57],
+
+    });
+
+    myMap.geoObjects.add(myPlacemark1);
+    myMap.geoObjects.add(myPlacemark2);
+    myMap.geoObjects.add(myPlacemark3);
+    myMap.geoObjects.add(myPlacemark4);
+}

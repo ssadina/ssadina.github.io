@@ -15,11 +15,20 @@ body{
 }
 
 .wrapper{
+	position: relative;
+
+	height: 100vh;
 	overflow: hidden;
-	min-height: 100%;
-	width: 100%;
 	// min-width: rem(940px);
 }
+.one-page{
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
 /* .container_center{
 	margin: 0 auto;
 } */
@@ -27,6 +36,11 @@ body{
 	display: flex;
 	max-width: rem(940px); 
 	width: 95%;
+}
+.container__wide{
+	max-width: 100%;
+	width: 100%;
+	height: 100vh;
 }
 .section {
     height: 100vh;
