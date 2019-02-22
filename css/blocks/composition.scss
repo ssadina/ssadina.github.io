@@ -6,6 +6,7 @@
 
 	&:hover{
 		.composition__drop{
+			top: 0;
 			opacity: 1;
 		}
 		.composition__btn{
@@ -32,7 +33,7 @@
 .composition__drop{
 	position: absolute;
 	left: rem(90px);
-	top: 0;
+	top: 9999px;
 	border-radius: rem(5px);
 	background-color: rgba(#fff, 0.85);
 	padding: rem(20px);

@@ -18,8 +18,10 @@
     overflow: hidden;
 
 	@include tablets {
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-top: rem(40px);
+		padding-bottom: rem(40px);
+		padding-left: rem(40px);
+		padding-right: rem(40px);
 		}	
 }
 .slider__list{
@@ -32,7 +34,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 150px;
+	min-height: rem(150px);
 
 }
 .slider__img{
@@ -118,8 +120,8 @@
 
 .slider__kkal{
 	position: absolute;
-    bottom: 25px;
-    left: 25px;
+    bottom: rem(25px);
+    left: rem(25px);
 
     @include tablets {
     	left: auto;
@@ -128,18 +130,23 @@
     	right: 0;
 	}
 }
-.kkal_icon {
-	width: 70px;
-    height: 76px;
+.slider__kkal_icon {
+	width: rem(70px);
+    height: rem(76px);
 } 
-.value{
+.slider__kkal-value{
 	position: absolute;
 	text-align: center;
-	top: 44%;
+	top: 34%;
 	left: 0;
 	right: 0;
 	color: #fff;
 	font-family: Gagalin-Regular;
-
-font-size: 23px;
+	font-size: rem(20px);
+}
+.slider__kkal-text{
+	color: #fff;
+	font-family: Gagalin-Regular;
+	font-size: rem(20px);
+	text-align: center;
 }

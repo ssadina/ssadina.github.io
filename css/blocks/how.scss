@@ -1,0 +1,14 @@
+.how {
+	background: url(../img/bghow.jpg) no-repeat center center /cover ;
+}
+.how .container {
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+}
+.how__video-container{
+	margin: 0 auto;
+	width: 80%; 
+}

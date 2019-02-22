@@ -9,14 +9,14 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
-	<!--script src="https://api-maps.yandex.ru/2.1/?apikey=7cabbb44-47e9-4799-a217-57eef673ad76" type="text/javascript"></script-->
+
 
 
 </head>
 <body>
 	<div class="wrapper">
-		<div class="one-page">
-			<section class="section hero section_centered active ">
+		<div class="one-page" id="fullpage">
+			<section class="section hero section_centered active " data-anchor="hero">
 				<div class="container hero__container ">
 					<header class="header">
 						<div class="logo">
@@ -26,30 +26,30 @@
 							<nav class="menu">
 								<ul class="menu__list">
 									<li class="menu__item">
-										<a href="#" class="menu__link">О нас</a>
+										<a href="#best" class="menu__link">О нас</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">Бургеры</a>
+										<a href="#section_slider" class="menu__link"">Бургеры</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">Команда</a>
+										<a href="#section_team" class="menu__link">Команда</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">Меню</a>
+										<a href="#section_menu" class="menu__link">Меню</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">Отзывы</a>
+										<a href="#reviews" class="menu__link">Отзывы</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">Как мы работаем</a>
+										<a href="#how" class="menu__link">Как мы работаем</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">Контакты</a>
+										<a href="#section_contacts" class="menu__link">Контакты</a>
 									</li>
 								</ul>
 							</nav>
 							<div class="header__links">
-								<a href="#" class="button">Заказать</a>
+								<a href="#order" class=" menu__link button">Заказать</a>
 								<a href="#" class="humburger-menu-link">
 									<div class="humburger-menu-link__bar"></div>
 								</a>
@@ -71,7 +71,7 @@
 
 			</section>
 
-			<section class="section section_centered best">
+			<section class="section section_centered best" data-anchor="best">
 				<div class="container ">
 					<div class="title">Мы лучшие</div>
 					<ul class="best__list">
@@ -112,7 +112,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="section section_centered section_slider">
+			<section class="section section_centered section_slider" data-anchor="section_slider">
 				<div class="container">
 					<div class="slider">
 						<div class="slider__arrows">
@@ -199,10 +199,11 @@
 										</div>
 									</div>
 									<div class="slider__kkal">
-	                                    <div class="value">1445</div>
-										<svg class="kkal_icon">
+	                                    <div class="slider__kkal-value">1340</div>
+										<svg class="slider__kkal_icon"> 
 											<use xlink:href="./img/icons/sprite.svg#kkal">
 										</svg>
+										<div class="slider__kkal-text">ккал</div>
 									</div>
 								</div>
 								<div class="slider__col">
@@ -210,7 +211,7 @@
 									<div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
 									<div class="slider__info">
 										<div class="slider__cost"><span>500</span> рублей</div>
-										<a href="#" class="button">Заказать</a>
+										<a href="#order" class="button">Заказать</a>
 									</div>
 								</div>
 							</li>
@@ -284,10 +285,11 @@
 										</div>
 									</div>
 									<div class="slider__kkal">
-	                                    <div class="value">1245</div>
-										<svg class="kkal_icon">
+	                                    <div class="slider__kkal-value">1200</div>
+										<svg class="slider__kkal_icon"> 
 											<use xlink:href="./img/icons/sprite.svg#kkal">
 										</svg>
+										<div class="slider__kkal-text">ккал</div>
 									</div>
 								</div>
 								<div class="slider__col">
@@ -295,7 +297,7 @@
 									<div class="slider__text">Ваш старый добрый знакомый, с тремя кусочками нежнейшего сыра эмменталь, рубленым бифштексом из 100% говядины, луком, салатом, соусом гриль теперь с добавлением экзотического соуса чураско и двумя помидорами .</div>
 									<div class="slider__info">
 										<div class="slider__cost"><span>400</span> рублей</div>
-										<a href="#" class="button">Заказать</a>
+										<a href="#order" class="button">Заказать</a>
 									</div>
 								</div>
 								
@@ -370,10 +372,11 @@
 										</div>
 									</div>
 									<div class="slider__kkal">
-	                                    <div class="value">1445</div>
-										<svg class="kkal_icon">
+	                                    <div class="slider__kkal-value">1250</div>
+										<svg class="slider__kkal_icon"> 
 											<use xlink:href="./img/icons/sprite.svg#kkal">
 										</svg>
+										<div class="slider__kkal-text">ккал</div>
 									</div>
 								</div>
 								<div class="slider__col">
@@ -381,7 +384,7 @@
 									<div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
 									<div class="slider__info">
 										<div class="slider__cost"><span>500</span> рублей</div>
-										<a href="#" class="button">Заказать</a>
+										<a href="#order" class="button">Заказать</a>
 									</div>
 								</div>
 							</li>
@@ -455,10 +458,11 @@
 										</div>
 									</div>
 									<div class="slider__kkal">
-	                                    <div class="value">1297</div>
-										<svg class="kkal_icon">
+	                                    <div class="slider__kkal-value">1130</div>
+										<svg class="slider__kkal_icon"> 
 											<use xlink:href="./img/icons/sprite.svg#kkal">
 										</svg>
+										<div class="slider__kkal-text">ккал</div>
 									</div>
 								</div>
 								<div class="slider__col">
@@ -466,7 +470,7 @@
 									<div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
 									<div class="slider__info">
 										<div class="slider__cost"><span>500</span> рублей</div>
-										<a href="#" class="button">Заказать</a>
+										<a href="#order" class="button">Заказать</a>
 									</div>
 								</div>
 							</li>
@@ -540,10 +544,11 @@
 										</div>
 									</div>
 									<div class="slider__kkal">
-	                                    <div class="value">1320</div>
-										<svg class="kkal_icon">
+	                                    <div class="slider__kkal-value">1200</div>
+										<svg class="slider__kkal_icon"> 
 											<use xlink:href="./img/icons/sprite.svg#kkal">
 										</svg>
+										<div class="slider__kkal-text">ккал</div>
 									</div>
 								</div>
 								<div class="slider__col">
@@ -551,7 +556,7 @@
 									<div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
 									<div class="slider__info">
 										<div class="slider__cost"><span>500</span> рублей</div>
-										<a href="#" class="button">Заказать</a>
+										<a href="#order" class="button">Заказать</a>
 									</div>
 								</div>
 							</li>
@@ -560,7 +565,7 @@
 				</div>
 
 			</section>
-			<section class="section section_team">
+			<section class="section section_team" data-anchor="section_team">
 				<div class="container">
 					<div class="team__block">
 						<div class="team__inner-block">
@@ -613,7 +618,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section section_menu">
+			<section class="section section_menu" data-anchor="section_menu">
 				<div class="container">
 					<h2 class="title title__white">Меню</h2>
 					<div class="accordion-menu">
@@ -638,7 +643,7 @@
 				</div>			
 			</section>
 
-			<section class="section reviews">
+			<section class="section reviews" data-anchor="reviews">
 				<div class="container">
 					<ul class="reviews__list">
 						<li class="reviews__item" style="background-image: url('./img/1.jpg')">
@@ -757,7 +762,18 @@
 					</div>
 				</div>
 			</section>
-			<section class="section section_centered order">
+			<section class="section how section_centered " data-anchor="how">
+				<div class="container">
+					<div class="title title__black">Как мы работаем</div>
+					<div class="how__video-container" >
+						<video controls width="100%">
+							<source src="./video/burger.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+		  					<source src="./video/burger.webm" type='video/webm; codecs="vp8, vorbis"' />
+						</video>
+					</div>
+				</div>
+			</section>
+			<section class="section section_centered order" data-anchor="order">
 				<div class="container ">
 					<div class="title">Закажите доставку</div>
 					<form action="" class="order__form" name="formOrder">
@@ -857,7 +873,7 @@
 					</form>
 				</div>
 			</section>
-			<section class="section section_contacts">
+			<section class="section section_contacts" data-anchor="section_contacts">
 				<div class="container__wide container ">
 					<div class="map" id="map" style="width: 100%; height: 100vh"></div>
 					<footer class="footer">
@@ -890,15 +906,34 @@
           </svg>
         </a>
 		<nav class="fixed-menu">
-			<ul class="fixed-menu__list">
-				<!-- <li class="fixed-menu__item"><a href="#"></a></li>
-				<li class="fixed-menu__item"><a href="#"></a></li>
-				<li class="fixed-menu__item"><a href="#"></a></li>
-				<li class="fixed-menu__item"><a href="#"></a></li>
-				<li class="fixed-menu__item"><a href="#"></a></li>
-				<li class="fixed-menu__item"><a href="#"></a></li>
-				<li class="fixed-menu__item"><a href="#"></a></li>
-				<li class="fixed-menu__item"><a href="#"></a></li> -->
+			<ul class="fixed-menu__list" id="fixed-menu">
+				<li class="fixed-menu__item" data-menuanchor="hero">
+					<a href="#hero" class="menu__link"></a>
+				</li>
+				<li class="fixed-menu__item" data-menuanchor="best">
+					<a href="#best" class="menu__link"></a>
+				</li>
+				<li class="fixed-menu__item" data-menuanchor="section_slider">
+					<a href="#section_slider" class="menu__link"></a>
+				</li>
+				<li class="fixed-menu__item" data-menuanchor="section_team">
+					<a href="#section_team" class="menu__link"></a>
+				</li>
+				<li class="fixed-menu__item" data-menuanchor="section_menu">
+					<a href="#section_menu" class="menu__link"></a>
+				</li>
+				<li class="fixed-menu__item" data-menuanchor="reviews">
+					<a href="#reviews" class="menu__link"></a>
+				</li>
+				<li class="fixed-menu__item" data-menuanchor="order">
+					<a href="#how" class="menu__link"></a>
+				</li>
+				<li class="fixed-menu__item" data-menuanchor="order">
+					<a href="#order" class="menu__link"></a>
+				</li>
+				<li class="fixed-menu__item" data-menuanchor="section_contacts">
+					<a href="#section_contacts" class="menu__link"></a>
+				</li>
 			</ul>
 		</nav>	
 		<div class="mobile-menu">
@@ -915,25 +950,28 @@
 			<nav class="mobile-menu__nav">
 				<ul class="mobile-menu__list">
 					<li class="mobile-menu__item">
-						<a href="#" class="menu__link">О нас</a>
+						<a href="#best" class="menu__link">О нас</a>
 					</li>
 					<li class="mobile-menu__item">
-						<a href="#" class="menu__link">Бургеры</a>
+						<a href="#section_slider" class="menu__link">Бургеры</a>
 					</li>
 					<li class="mobile-menu__item">
-						<a href="#" class="menu__link">Команда</a>
+						<a href="#section_team" class="menu__link">Команда</a>
 					</li>
 					<li class="mobile-menu__item">
-						<a href="#" class="menu__link">Меню</a>
+						<a href="#section_menu" class="menu__link">Меню</a>
 					</li>
 					<li class="mobile-menu__item">
-						<a href="#" class="menu__link">Отзывы</a>
+						<a href="#reviews" class="menu__link">Отзывы</a>
 					</li>
 					<li class="mobile-menu__item">
-						<a href="#" class="menu__link">Как мы работаем</a>
+						<a href="#how" class="menu__link">Как мы работаем</a>
 					</li>
 					<li class="mobile-menu__item">
-						<a href="#" class="menu__link">Контакты</a>
+						<a href="#order" class="menu__link">Заказать</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="#section_contacts" class="menu__link">Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -944,8 +982,11 @@
 		</div>
 	</div>
 	
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	
 	<script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<!--script src="https://api-maps.yandex.ru/2.1/?apikey=7cabbb44-47e9-4799-a217-57eef673ad76" type="text/javascript"></script-->
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="./js/fullpage.js" type="text/javascript"></script>
 	<script src="./js/script.js" type="text/javascript"></script>
 </body>
 </html>

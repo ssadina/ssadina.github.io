@@ -33,7 +33,14 @@ $phones: 480px;
 }
 
 
+@import "./fullpage.scss";
 
+.fp-tableCell{
+	display: flex !important;
+}
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: flex !important;
+}
 /*block*/
 @import "./blocks/header.scss";
 @import "./blocks/hero.scss";
@@ -57,4 +64,5 @@ $phones: 480px;
 @import "./blocks/close.scss";
 @import "./blocks/form-popap.scss";
 @import "./blocks/arrow.scss";
-
+@import "./blocks/how.scss"; 
+ 

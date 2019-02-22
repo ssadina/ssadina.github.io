@@ -5,15 +5,15 @@ Error: Undefined mixin 'tablets'.
 
 1: .section_menu{
 2: 	position: relative;
-3: 	padding: 5.9375rem;
+3: 	/* padding: 5.9375rem; *\/
 4: 	background: url("../img/bg_menu.png") 50% 50% /cover no-repeat;
 5: 
 6: 	@include tablets {
 7: 		padding: rem(30px) rem(20px);
 8: 	}
-9: }
-10: .accordion-menu{
-11: 	position: absolute;
+9: 
+10: 	.title__white{
+11: 		padding: 5.9375rem;
 
 Backtrace:
 C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\accordion-menu.scss:6:in `tablets'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 6 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\accordion-menu.scss, in `tablets'\A         from line 6 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\accordion-menu.scss\A \A 1: .section_menu{\A 2: 	position: relative;\A 3: 	padding: 5.9375rem;\A 4: 	background: url(\"../img/bg_menu.png\") 50% 50% /cover no-repeat;\A 5: \A 6: 	@include tablets {\A 7: 		padding: rem(30px) rem(20px);\A 8: 	}\A 9: }\A 10: .accordion-menu{\A 11: 	position: absolute;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 6 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\accordion-menu.scss, in `tablets'\A         from line 6 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\accordion-menu.scss\A \A 1: .section_menu{\A 2: 	position: relative;\A 3: 	/* padding: 5.9375rem; */\A 4: 	background: url(\"../img/bg_menu.png\") 50% 50% /cover no-repeat;\A 5: \A 6: 	@include tablets {\A 7: 		padding: rem(30px) rem(20px);\A 8: 	}\A 9: \A 10: 	.title__white{\A 11: 		padding: 5.9375rem;"; }

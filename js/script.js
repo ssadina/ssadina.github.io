@@ -185,19 +185,28 @@ function validateField(field){
 
 
 
-// one-page-scroll
+// one-page-arrows
 
-$ (function() {
+/*var firstSection = $('.section:first-child');
+var activeFirstSection = firstSection.hasClass('active');
+var lastSection = $('.one-page:last-child');
+var activeLastSection = lastSection.hasClass('active');
+var upArrow = $('.up-arrow');
+var downArrow = $('.down-arrow');
 
-    var activeDots = function (index){
-        $('.wrapper')
-            .find('.fixed-menu__item')
-            .eq(index)
-            .addClass('active')
-            .siblings()
-            .removeClass('active');
-    }
+if (activeFirstSection){                  //как сделать проверку, которая будет отслеживать изменения класса active при скролле?
+    upArrow.css({'display':'none'});
+} else if(activeLastSection){
+    downArrow.css({
+        'display':'none'
+    });
+};*/
 
+
+// one-page-scroll variant 1
+
+
+/*$ (function() {
 
     var generateDots = function () {
         $('.section').each(function () {
@@ -212,6 +221,18 @@ $ (function() {
         });
     };
     generateDots();
+
+    var activeDots = function (index){
+        $('.wrapper')
+            .find('.fixed-menu__item')
+            .eq(index)
+            .addClass('active')
+            .siblings()
+            .removeClass('active');
+    }
+
+
+
 
     var moveSection = function (container, sectionNum){
         var 
@@ -260,32 +281,26 @@ $ (function() {
             moveSection(container, index);
             activeDots(index);
     })
-        
-    });
+      
+
+    $('body').on('mousewheel', function(){
+         var $this = $(this),
+            container = $this.closest('.wrapper'),
+            index = $this.index();
+
+            moveSection(container, index);
+            activeDots(index);
+    })  
+    }); 
 
 
+});*/
 
-    // $('.up-arrow').on('click', function(e){
-    //     e.preventDefault();
 
-    //     var $this = $(this);
-    //         container = $this.closest('.wrapper'),
-    //         section = container.find('.section'),
-    //         activeSection = section.filter('.active'),
-    //         reqSection = activeSection.prev(),
-    //         reqIndex = reqSection.index(),
-    //         list = container.find('.one-page'),
-    //         duration = 500;
+// one-page-scroll variant 2
 
-    //     if(reqSection.length){
-    //         list.animate({
-    //         'top' : -reqIndex * 100 + '%'
-    //         }, duration, function(){
-    //             activeSection.removeClass('active');
-    //             reqSection.addClass('active');
-    //         });
-    //     }
-    // });
+$('#fullpage').fullpage({
+    menu: '#fixed-menu'
 });
 
 

@@ -9,11 +9,11 @@ Error: Undefined mixin 'tablets'.
 18:     overflow: hidden;
 19: 
 20: 	@include tablets {
-21: 		padding-top: 40px;
-22: 		padding-bottom: 40px;
-23: 		}	
-24: }
-25: .slider__list{
+21: 		padding-top: rem(40px);
+22: 		padding-bottom: rem(40px);
+23: 		padding-left: rem(40px);
+24: 		padding-right: rem(40px);
+25: 		}	
 
 Backtrace:
 C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss:20:in `tablets'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 20 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss, in `tablets'\A         from line 20 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss\A \A 15: 	// height: rem(475px);    нужна ли она?\A 16: 	align-items: center;\A 17:     display: flex;\A 18:     overflow: hidden;\A 19: \A 20: 	@include tablets {\A 21: 		padding-top: 40px;\A 22: 		padding-bottom: 40px;\A 23: 		}	\A 24: }\A 25: .slider__list{"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 20 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss, in `tablets'\A         from line 20 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\slider.scss\A \A 15: 	// height: rem(475px);    нужна ли она?\A 16: 	align-items: center;\A 17:     display: flex;\A 18:     overflow: hidden;\A 19: \A 20: 	@include tablets {\A 21: 		padding-top: rem(40px);\A 22: 		padding-bottom: rem(40px);\A 23: 		padding-left: rem(40px);\A 24: 		padding-right: rem(40px);\A 25: 		}	"; }

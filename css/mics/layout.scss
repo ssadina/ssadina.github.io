@@ -16,22 +16,18 @@ body{
 
 .wrapper{
 	position: relative;
-
 	height: 100vh;
-	overflow: hidden;
+	// overflow: hidden;
+
 	// min-width: rem(940px);
 }
 .one-page{
 	position: absolute;
-	overflow: hidden;
+	// overflow: hidden;
 	width: 100%;
 	top: 0;
 	left: 0;
 }
-
-/* .container_center{
-	margin: 0 auto;
-} */
 .container{
 	display: flex;
 	max-width: rem(940px); 

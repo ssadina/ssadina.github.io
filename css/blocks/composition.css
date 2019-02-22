@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$red".
-        on line 12 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\composition.scss
+        on line 13 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\composition.scss
 
-7: 	&:hover{
 8: 		.composition__drop{
-9: 			opacity: 1;
-10: 		}
-11: 		.composition__btn{
-12: 			background-color: $red;
-13: 		}
-14: 	}
-15: }
-16: .composition__btn{
-17: 	display: flex;
+9: 			top: 0;
+10: 			opacity: 1;
+11: 		}
+12: 		.composition__btn{
+13: 			background-color: $red;
+14: 		}
+15: 	}
+16: }
+17: .composition__btn{
+18: 	display: flex;
 
 Backtrace:
-C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\composition.scss:12
+C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\composition.scss:13
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -84,4 +84,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$red\".\A         on line 12 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\composition.scss\A \A 7: 	&:hover{\A 8: 		.composition__drop{\A 9: 			opacity: 1;\A 10: 		}\A 11: 		.composition__btn{\A 12: 			background-color: $red;\A 13: 		}\A 14: 	}\A 15: }\A 16: .composition__btn{\A 17: 	display: flex;"; }
+  content: "Error: Undefined variable: \"$red\".\A         on line 13 of C:\Users\Lena\Documents\Web_development\Loftschool_burger\burger\css\blocks\composition.scss\A \A 8: 		.composition__drop{\A 9: 			top: 0;\A 10: 			opacity: 1;\A 11: 		}\A 12: 		.composition__btn{\A 13: 			background-color: $red;\A 14: 		}\A 15: 	}\A 16: }\A 17: .composition__btn{\A 18: 	display: flex;"; }
