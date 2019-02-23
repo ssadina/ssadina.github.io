@@ -122,6 +122,7 @@
 	position: absolute;
     bottom: rem(25px);
     left: rem(25px);
+    opacity: 0.7;
 
     @include tablets {
     	left: auto;

@@ -83,12 +83,12 @@ var reviewsPopup = document.querySelector('.reviews__popup');
 var reviewsBtn = document.querySelectorAll('.reviews__btn');
 var reviewsBtnLink = document.querySelectorAll('.button');
 
-for (let i = 0; i < reviewsBtnLink.length; i++) {
+/*for (let i = 0; i < reviewsBtnLink.length; i++) {
     reviewsBtnLink[i].addEventListener('click', function(event){
         event.preventDefault();
     })
 }
-
+*/
 for (let i = 0; i < reviewsBtn.length; i++) {
     reviewsBtn[i].addEventListener('click',function(event){
         event.preventDefault();
@@ -100,7 +100,7 @@ closed(reviewsPopup);
 
 
 
-//reviews_popup
+//slider__arrow
 
 var right = document.querySelector('.slider__arrow_left');
 var left = document.querySelector('.slider__arrow_right');
