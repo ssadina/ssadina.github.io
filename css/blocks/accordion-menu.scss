@@ -9,6 +9,10 @@
 
 	.title__white{
 		padding: 5.9375rem;
+
+		@include tablets {
+			padding: rem(25px);
+		}
 	}
 }
 .accordion-menu{

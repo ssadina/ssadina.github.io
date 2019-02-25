@@ -18,8 +18,9 @@
 .mobile-menu__logo{
 	padding: rem(9px);
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: rem(3px);
+	left: rem(3px);
+
 }
 .mobile-menu__list{
 	@include tablets {

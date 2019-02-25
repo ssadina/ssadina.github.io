@@ -6,6 +6,11 @@
 		margin: 0;
 		line-height: rem(63px);
 		margin-bottom: rem(45px);
+
+		@include tablets {
+			font-size: rem(42px);
+			margin-bottom: rem(20px);
+		}	
 }
 .title__white{
 	color: #fff;

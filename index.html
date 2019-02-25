@@ -115,7 +115,7 @@
 			<section class="section section_centered section_slider" data-anchor="section_slider">
 				<div class="container">
 					<div class="slider">
-						<div class="slider__arrows">
+						<!--div class="slider__arrows"-->
 							<div class="slider__arrow slider__arrow_left">
 								<svg class="slider__arrow_icon">
 					            	<use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
@@ -127,7 +127,7 @@
 									<use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
 								</svg>
 							</div>
-						</div>
+						<!--/div-->
 						<ul class="slider__list">
 							<li class="slider__item">
 								<div class="slider__col slider__col_img">
@@ -765,11 +765,33 @@
 			<section class="section how section_centered " data-anchor="how">
 				<div class="container">
 					<div class="title title__black">Как мы работаем</div>
-					<div class="how__video-container" >
-						<video controls width="100%">
+					<div class="how__video-container video__container" >
+						<video id="video__player" class="video__player" width="100%">
 							<source src="./video/burger.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-		  					<source src="./video/burger.webm" type='video/webm; codecs="vp8, vorbis"' />
 						</video>
+						<div class="video__controls">
+							<div class="controls">
+								<div id="play" class="controls__play">
+									<svg class="icon icon-play">
+										<use xlink:href="./img/icons/sprite.svg#play"></use>
+									</svg>
+									<svg class="icon icon-pause">
+										<use xlink:href="./img/icons/sprite.svg#pause"></use>
+									</svg>
+								</div>
+								<div class="controls__progress">
+									<input id="progress"  type="range" class="progress" min="0" max="100">
+								</div>
+								<div id="volume-btn" class="controls__volume-btn">
+									<svg class="icon">
+										<use xlink:href="./img/icons/sprite.svg#volume"></use>
+									</svg>
+								</div>
+								<div class="controls__volume">
+									<input id="volume" type="range" class="progress" min="0" max="100">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -895,11 +917,11 @@
 				</div>
 			</section>
 		</div>
-		<a class="arrow up-arrow" href="#" data-scroll-to="1">
+<!-- 		<a class="arrow up-arrow" href="#" data-scroll-to="1">
           <svg class="arrow__icon down-arrow__icon">
             <use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
           </svg>
-        </a>
+        </a> -->
 		<a class="arrow down-arrow" href="#" data-scroll-to="1">
           <svg class="arrow__icon down-arrow__icon">
             <use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
@@ -925,7 +947,7 @@
 				<li class="fixed-menu__item" data-menuanchor="reviews">
 					<a href="#reviews" class="menu__link"></a>
 				</li>
-				<li class="fixed-menu__item" data-menuanchor="order">
+				<li class="fixed-menu__item" data-menuanchor="how">
 					<a href="#how" class="menu__link"></a>
 				</li>
 				<li class="fixed-menu__item" data-menuanchor="order">

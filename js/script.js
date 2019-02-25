@@ -1,14 +1,16 @@
-
-
 //mobile-menu
 
 var close = document.querySelectorAll('.close');
 var humburgerMenuLink = document.querySelector('.humburger-menu-link');
 var mobileMenu = document.querySelector('.mobile-menu');
+var menuLink = document.querySelector('.menu__link');
+var downArrow = document.querySelector('.down-arrow');
 
-     humburgerMenuLink.addEventListener('click', () =>{
-        mobileMenu.classList.add('opened');
-    })   
+ humburgerMenuLink.addEventListener('click', () =>{
+    mobileMenu.classList.add('opened');
+    downArrow.style.display = "none";
+
+});
 
 function opened(){
     //  humburgerMenuLink.addEventListener('click', () =>{
@@ -23,11 +25,12 @@ function closed(elemClosed){
         // reviewsPopup.classList.remove('opened');
         })
     }
-}
-
-
+};
 closed(mobileMenu);
-
+menuLink.addEventListener('click', (e)=>{
+    e.preventDefault;
+    closed(mobileMenu);
+})
 
 
 
@@ -48,7 +51,7 @@ for (let i = 0; i < teamItem.length; i++) {
             teamItem[i].classList.add('active'); 
             }
     })
-}
+};
 
 //accordion-menu
 
@@ -297,6 +300,7 @@ if (activeFirstSection){                  //как сделать проверк
 });*/
 
 
+
 // one-page-scroll variant 2
 
 $('#fullpage').fullpage({
@@ -304,6 +308,63 @@ $('#fullpage').fullpage({
 });
 
 
+
+// video
+
+function ready() {
+    let videoPlayer = document.getElementById('video__player');
+    let play = document.getElementById('play');
+    let progress = document.getElementById('progress');
+    let volumeBtn = document.getElementById('volume-btn');
+    let volume = document.getElementById('volume');
+
+    let videoFlag = false;
+    let volumeFlag = false;
+
+
+    let playVideo = () =>{
+        if (!videoFlag) {
+            videoPlayer.play();
+            videoFlag = true;
+            play.classList.add('active');
+        } else {
+            videoPlayer.pause();
+            videoFlag = false;
+            play.classList.remove('active');
+        }
+    };
+    let volumeVideo = () =>{
+        if (!volumeFlag) {
+            videoPlayer.volume = 0;
+            volumeFlag = true;
+        } else {
+            videoPlayer.volume = 1;
+            volumeFlag = false;
+        }
+    };
+    let progressVideo = () =>{
+        // console.log(progress.value);
+        videoPlayer.currentTime = Math.floor((videoPlayer.duration/100)*progress.value);
+    };
+
+    videoPlayer.addEventListener('timeupdate', () =>{
+        let percent = (100/videoPlayer.duration)*videoPlayer.currentTime;
+        progress.value = percent;
+    });
+
+
+    let volumeVideoControl = ()=>{
+        videoPlayer.volume = volume.value / 100;
+
+    };
+
+    play.addEventListener('click', playVideo);
+    volumeBtn.addEventListener('click', volumeVideo);
+    progress.addEventListener('input', progressVideo);
+    volume.addEventListener('input', volumeVideoControl);
+};
+
+document.addEventListener("DOMContentLoaded", ready);
 
 
 // map

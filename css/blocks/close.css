@@ -1,7 +1,7 @@
 .close_x {
   position: absolute;
-  top: rem(32px);
-  right: rem(32px);
+  top: rem(55px);
+  right: rem(45px);
   fill: #fff;
   width: rem(20px);
   height: rem(20px); }
