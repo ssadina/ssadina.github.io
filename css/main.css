@@ -693,6 +693,9 @@ html.fp-enabled,
       margin-top: -86px;
       margin-left: 0;
       width: auto; } }
+  .reviews__popup.opened .reviews__close {
+    top: 1.25rem;
+    right: 1.25rem; }
 
 .order {
   background: url(../img/bg_order.jpg) center center/cover no-repeat; }
@@ -1618,6 +1621,16 @@ a[href^="tel:"] {
 
 .form-popap__text {
   padding-bottom: 20px; }
+
+.form-popap__wrap {
+  position: absolute;
+  height: 100vh;
+  background-color: rgba(47, 50, 52, 0.99);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%; }
 
 .arrow {
   position: absolute;

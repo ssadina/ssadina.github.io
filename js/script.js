@@ -3,7 +3,7 @@
 var close = document.querySelectorAll('.close');
 var humburgerMenuLink = document.querySelector('.humburger-menu-link');
 var mobileMenu = document.querySelector('.mobile-menu');
-var menuLink = document.querySelector('.menu__link');
+var menuLink = document.querySelectorAll('.mobile-menu .menu__link');
 var downArrow = document.querySelector('.down-arrow');
 
  humburgerMenuLink.addEventListener('click', () =>{
@@ -12,27 +12,44 @@ var downArrow = document.querySelector('.down-arrow');
 
 });
 
-function opened(){
-    //  humburgerMenuLink.addEventListener('click', () =>{
-    //     mobileMenu.classList.add('opened');
-    // })   
-}
-
 function closed(elemClosed){
     for (let i = 0; i < close.length; i++) {
         close[i].addEventListener('click', () =>{
-        elemClosed.classList.remove('opened');
-        // reviewsPopup.classList.remove('opened');
+            elemClosed.classList.remove('opened');
         })
     }
 };
+
 closed(mobileMenu);
-menuLink.addEventListener('click', (e)=>{
-    e.preventDefault;
-    closed(mobileMenu);
-})
 
+function closedMenu() {
+    for (let k = 0; k < menuLink.length; k++) {
+        menuLink[k].addEventListener('click', () =>{
+            mobileMenu.classList.remove('opened');
+        })
+    }
+};
 
+closedMenu();
+
+// const menuLink = document.querySelectorAll('.menu .button');
+// const close = document.querySelectorAll('.close .button');
+
+// function closeMenu(ele) {
+//     ele.parentElement.classList.remove('opened');
+// }
+
+// for (let i = 0; i < close.length; i++) {
+//     close[i].addEventListener('click', () => closeMenu(close[i]))
+// }
+// for (let k = 0; k < menuLink.length; k++) {
+//     menuLink[k].addEventListener('click', e =>{
+//         e.preventDefault;
+//         closeMenu(menuLink[k]);
+//     })
+// }
+
+    
 
 //accordion-team
 
@@ -134,8 +151,11 @@ var formButtonOrder = document.querySelector('.form__block-submit');
 var formPopap = document.querySelector('.form-popap');
 var formPopapText = document.querySelector('.form-popap__text');
 
+console.log(formButtonOrder);
 formButtonOrder.addEventListener('click', (event) =>{
-    event.preventDefault.formButtonOrder;
+    event.preventDefault();
+    event.stopPropagation();
+    // .formButtonOrder;
     if (validateForm(formOrder)) {
         var formData = new FormData(document.forms.formOrder);
         formData.append("to","ssadina@list.ru");
@@ -154,7 +174,7 @@ formButtonOrder.addEventListener('click', (event) =>{
                 formPopapText.textContent = "Что-то пошло не так";
             }
          }); 
-
+console.log(xhr.response.status);
         // xhr.send(JSON.stringify(data));
 
     };
@@ -190,6 +210,31 @@ function validateField(field){
 
 // one-page-arrows
 
+/*$ (function() {
+        var container = $('.wrapper');
+        console.log(container);
+        var sections = container.find('.section');
+        console.log(sections);
+        var activeSection = sections.filter('.active');
+        var sectionNum = 2;
+        var reqSection = sections.eq(sectionNum);
+        var reqIndex = reqSection.index();
+        var downArrow = $('.down-arrow');
+        // downArrow.addEventListener('click', (e)=>{
+        //     e.preventDefault;
+        //     activeSection.removeClass('active');
+        //     reqSection.addClass('active');
+        // });
+        var hero = $('.hero');
+        var best = $('.best');
+
+        downArrow.on('click', function(e){
+        e.preventDefault();
+        hero.removeClass('active');
+        best.addClass('active');
+
+        });
+});*/
 /*var firstSection = $('.section:first-child');
 var activeFirstSection = firstSection.hasClass('active');
 var lastSection = $('.one-page:last-child');
@@ -252,7 +297,7 @@ if (activeFirstSection){                  //как сделать проверк
             }, duration, function(){
                 activeSection.removeClass('active');
                 reqSection.addClass('active');
-                activeDots(sectionNum);
+               // activeDots(sectionNum);
             });
         }
     }
@@ -285,7 +330,7 @@ if (activeFirstSection){                  //как сделать проверк
             activeDots(index);
     })
       
-
+/*
     $('body').on('mousewheel', function(){
          var $this = $(this),
             container = $this.closest('.wrapper'),
@@ -306,8 +351,6 @@ if (activeFirstSection){                  //как сделать проверк
 $('#fullpage').fullpage({
     menu: '#fixed-menu'
 });
-
-
 
 // video
 
