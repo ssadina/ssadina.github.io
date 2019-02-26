@@ -1622,16 +1622,23 @@ a[href^="tel:"] {
 .form-popap__text {
   padding-bottom: 20px; }
 
-.form-popap__wrap {
-  position: absolute;
-  height: 100vh;
-  background-color: rgba(47, 50, 52, 0.99);
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%; }
+/* .form-popap__wrap{
+	position: absolute;
 
+height: 100vh;
+
+background-color: rgba(47, 50, 52, 0.99);
+
+top: 0;
+
+bottom: 0;
+
+right: 0;
+
+left: 0;
+
+width: 100%;
+} */
 .arrow {
   position: absolute;
   left: 50%;
